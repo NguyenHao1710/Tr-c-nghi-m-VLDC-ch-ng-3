@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ôn Thi Trắc Nghiệm - Vật Lý Đại Cương 1 (Chương 4)</title>
+    <title>Ôn Thi Trắc Nghiệm - Vật Lý Đại Cương 1 (Chương 3)</title>
     <style>
         :root {
             --primary-color: #2563eb;
@@ -141,7 +141,7 @@
 
 <div class="container">
     <h1>VẬT LÝ ĐẠI CƯƠNG 1 - CƠ NHIỆT</h1>
-    <div class="subtitle">Chương 4: Cơ Học Vật Rắn (91 Câu - Đầy đủ đáp án & Lời giải)</div>
+    <div class="subtitle">Chương 3: Các Định Luật Bảo Toàn (Đầy đủ 91 Câu - Đáp án & Lời giải chuẩn)</div>
 
     <div id="quiz-screen">
         <div class="quiz-controls">
@@ -166,7 +166,7 @@
     </div>
 
     <div class="score-card" id="score-card">
-        <h2>Hoàn thành bài ôn tập Chương 4!</h2>
+        <h2>Hoàn thành bài ôn tập Chương 3!</h2>
         <p id="final-score" style="font-size: 20px; margin: 20px 0;"></p>
         <button onclick="restartQuiz()">Làm lại từ đầu</button>
     </div>
@@ -175,1005 +175,1005 @@
 <script>
     const quizData = [
         {
-            q: "Câu 1. Hai vật có cùng khối lượng và cùng kích thước nhưng phân bố khối lượng khác nhau. Mômen quán tính đối với cùng một trục",
+            q: "Câu 1. Trong một hệ cô lập, khi xảy ra va chạm (đàn hồi hoặc không đàn hồi), đại lượng nào sau đây luôn được bảo toàn?",
             options: [
-                "nhất thiết bằng nhau.",
-                "chỉ phụ thuộc khối lượng nên bằng nhau.",
-                "có thể khác nhau.",
-                "luôn bằng 0 nếu khối tâm nằm trên trục."
+                "Chỉ động năng của hệ.",
+                "Chỉ cơ năng của hệ.",
+                "Động lượng toàn phần của hệ.",
+                "Cả động lượng và cơ năng của hệ."
             ],
             correct: 2,
-            explain: "Mômen quán tính I phụ thuộc vào cách phân bố khối lượng so với trục quay, do đó phân bố khác nhau thì mômen quán tính khác nhau."
+            explain: "Trong mọi va chạm nếu hệ được coi là cô lập (thời gian va chạm rất ngắn, ngoại lực triệt tiêu), động lượng toàn phần của hệ luôn được bảo toàn. Cơ năng chỉ bảo toàn trong va chạm hoàn toàn đàn hồi."
         },
         {
-            q: "Câu 2. Muốn làm tăng mômen quán tính của một vật đối với một trục mà không thay đổi khối lượng, ta nên",
+            q: "Câu 2. Phát biểu nào sau đây đúng khi nói về va chạm đàn hồi và va chạm không đàn hồi (va chạm mềm)?",
             options: [
-                "đưa khối lượng lại gần trục hơn.",
-                "đưa khối lượng ra xa trục hơn.",
-                "tăng tốc độ góc.",
-                "giảm tốc độ góc."
+                "Cả hai loại va chạm đều bảo toàn động năng.",
+                "Va chạm đàn hồi bảo toàn động năng, va chạm mềm không bảo toàn động năng.",
+                "Va chạm mềm bảo toàn động năng, va chạm đàn hồi không bảo toàn động năng.",
+                "Cả hai loại va chạm đều không bảo toàn động lượng."
             ],
             correct: 1,
-            explain: "Đưa khối lượng ra xa trục quay (tăng khoảng cách r) sẽ làm tăng mômen quán tính I."
+            explain: "Va chạm đàn hồi bảo toàn cả động lượng và động năng; va chạm mềm chỉ bảo toàn động lượng, động năng bị tiêu hao một phần thành nhiệt năng hoặc biến dạng."
         },
         {
-            q: "Câu 3. Một người đang quay trên ghế xoay rồi thu hai tay sát vào người. Bỏ qua mômen ngoại lực, tốc độ góc của người tăng vì",
+            q: "Câu 3. Công của lực thế tác dụng lên một vật di chuyển từ điểm A đến điểm B phụ thuộc vào yếu tố nào?",
             options: [
-                "động năng luôn được bảo toàn.",
-                "mômen quán tính tăng.",
-                "mômen quán tính giảm trong khi mômen động lượng bảo toàn.",
-                "khối lượng của người giảm."
+                "Đường đi từ A đến B.",
+                "Hình dạng quỹ đạo chuyển động.",
+                "Chỉ phụ thuộc vào vị trí điểm đầu A và điểm cuối B.",
+                "Vận tốc của vật tại điểm A."
             ],
             correct: 2,
-            explain: "Thu tay làm mômen quán tính I giảm; do mômen động lượng được bảo toàn nên tốc độ góc omega tăng."
+            explain: "Lực thế (như trọng lực, lực đàn hồi) có công không phụ thuộc vào hình dạng quỹ đạo mà chỉ phụ thuộc vào vị trí điểm đầu và điểm cuối."
         },
         {
-            q: "Câu 4. Cùng một mômen lực tác dụng lên hai vật rắn có mômen quán tính khác nhau. Vật có mômen quán tính lớn hơn sẽ có",
+            q: "Câu 4. Biểu thức tính công của một lực không đổi F làm dịch chuyển một đoạn đường s theo hướng hợp với lực một góc alpha là",
             options: [
-                "gia tốc góc lớn hơn.",
-                "gia tốc góc nhỏ hơn.",
-                "cùng gia tốc góc.",
-                "tốc độ góc luôn bằng 0."
+                "A = F * s * sin(alpha).",
+                "A = F * s * cos(alpha).",
+                "A = F / (s * cos(alpha)).",
+                "A = 0.5 * F * s^2."
             ],
             correct: 1,
-            explain: "Theo phương trình M = I * beta, với cùng mômen lực M, vật có mômen quán tính lớn hơn sẽ có gia tốc góc nhỏ hơn."
+            explain: "Công thức tổng quát tính công cơ học: A = F * s * cos(alpha)."
         },
         {
-            q: "Câu 5. Một đĩa đặc và một vành tròn đồng chất có cùng khối lượng và bán kính, quay quanh trục qua tâm. Mômen quán tính của",
+            q: "Câu 5. Định lý biến thiên động năng phát biểu: Độ biến thiên động năng của một vật bằng",
             options: [
-                "đĩa lớn hơn.",
-                "vành lớn hơn.",
-                "hai vật bằng nhau.",
-                "phụ thuộc vào tốc độ quay nên chưa thể so sánh."
+                "công của trọng lực tác dụng lên vật.",
+                "công của tất cả các lực (ngoại lực và nội lực) tác dụng lên vật.",
+                "độ giảm thế năng của vật.",
+                "cơ năng của vật."
             ],
             correct: 1,
-            explain: "Vành tròn có khối lượng tập trung ở vành nên mômen quán tính lớn hơn đĩa đặc (có khối lượng phân bố từ tâm ra)."
+            explain: "Độ biến thiên động năng của chất điểm trong một khoảng thời gian bằng tổng công của tất cả các lực tác dụng lên nó: W_d2 - W_d1 = A."
         },
         {
-            q: "Câu 6. Hai đĩa tròn giống hệt nhau. Một cái giữ cố định, còn cái thứ II tiếp xúc ngoài và lăn không trượt xung quanh chu vi của đĩa I. Hỏi khi đĩa II trở về đúng điểm xuất phát ban đầu thì nó đã quay xung quanh tâm của nó được mấy vòng?",
+            q: "Câu 6. Khi chỉ có các lực thế (như trọng lực, lực đàn hồi) sinh công làm biến đổi chuyển động của hệ, đại lượng nào sau đây được bảo toàn?",
             options: [
-                "1 vòng.",
-                "2 vòng.",
-                "3 vòng.",
-                "4 vòng."
+                "Động năng của hệ.",
+                "Thế năng của hệ.",
+                "Cơ năng toàn phần của hệ.",
+                "Động lượng của hệ."
+            ],
+            correct: 2,
+            explain: "Khi hệ chỉ chịu tác dụng của các lực thế sinh công (không có lực ma sát, lực cản), cơ năng toàn phần W = W_d + W_t được bảo toàn."
+        },
+        {
+            q: "Câu 7. Một hệ cơ học được gọi là hệ cô lập khi nào?",
+            options: [
+                "Tổng các ngoại lực tác dụng lên hệ bằng không.",
+                "Hệ không chịu tác dụng của bất kỳ lực nào kể cả nội lực.",
+                "Các vật trong hệ chuyển động thẳng đều.",
+                "Khối lượng của hệ không đổi theo thời gian."
+            ],
+            correct: 0,
+            explain: "Hệ cô lập (hệ kín) là hệ không chịu tác dụng của ngoại lực, hoặc tổng véc-tơ các ngoại lực tác dụng lên hệ triệt tiêu bằng 0."
+        },
+        {
+            q: "Câu 8. Đại lượng nào sau đây đặc trưng cho tốc độ sinh công của lực?",
+            options: [
+                "Động năng.",
+                "Công suất.",
+                "Động lượng.",
+                "Mômen lực."
             ],
             correct: 1,
-            explain: "Khi đĩa lăn trượt một vòng quanh chu vi đĩa cố định bán kính R, số vòng quay quanh tâm của chính nó là 2 vòng."
+            explain: "Công suất P = A / t đặc trưng cho tốc độ thực hiện công trong một đơn vị thời gian."
         },
         {
-            q: "Câu 7. Khi vật rắn chỉ có chuyển động tịnh tiến thì có tính chất nào sau đây?",
+            q: "Câu 9. Động lượng của một chất điểm khối lượng m đang chuyển động với vận tốc v được xác định bởi biểu thức",
             options: [
-                "Các điểm trên vật rắn đều có cùng một dạng quỹ đạo.",
-                "Các điểm trên vật rắn đều có cùng vectơ vận tốc.",
-                "Gia tốc của một điểm bất kì trên vật rắn luôn bằng với Gia tốc của khối tâm vật rắn.",
-                "Cả 3 ý trên đều đúng."
+                "p = m * v.",
+                "p = 0.5 * m * v^2.",
+                "p = m * v^2.",
+                "p = m / v."
+            ],
+            correct: 0,
+            explain: "Định nghĩa véc-tơ động lượng của chất điểm: p = m * v."
+        },
+        {
+            q: "Câu 10. Phát biểu nào sau đây không đúng về định luật bảo toàn cơ năng?",
+            options: [
+                "Cơ năng của hệ bảo toàn nếu chỉ có các lực thế sinh công.",
+                "Lực ma sát sinh công làm tiêu hao cơ năng thành nhiệt năng.",
+                "Trong va chạm mềm, cơ năng của hệ được bảo toàn hoàn toàn.",
+                "Tổng động năng và thế năng của hệ cô lập dưới tác dụng của lực thế là hằng số."
+            ],
+            correct: 2,
+            explain: "Trong va chạm mềm (không đàn hồi), một phần cơ năng bị biến đổi thành nhiệt năng và công biến dạng nên cơ năng không bảo toàn."
+        },
+        {
+            q: "Câu 11. Đơn vị nào sau đây là đơn vị của động lượng?",
+            options: [
+                "kg.m/s.",
+                "N.m.",
+                "J/s.",
+                "kg.m^2/s."
+            ],
+            correct: 0,
+            explain: "Động lượng p = m * v nên có đơn vị là kg.m/s (hoặc N.s)."
+        },
+        {
+            q: "Câu 12. Khi khối lượng của vật tăng gấp đôi và vận tốc tăng gấp đôi thì động năng của vật tăng lên bao nhiêu lần?",
+            options: [
+                "2 lần.",
+                "4 lần.",
+                "8 lần.",
+                "16 lần."
+            ],
+            correct: 2,
+            explain: "Động năng W_d = 0.5 * m * v^2. Khi m tăng 2 lần và v tăng 2 lần (v^2 tăng 4 lần) thì động năng tăng 2 * 4 = 8 lần."
+        },
+        {
+            q: "Câu 13. Chọn câu đúng khi nói về mối liên hệ giữa xung lượng của lực và độ biến thiên động lượng.",
+            options: [
+                "Xung lượng của lực tác dụng trong khoảng thời gian delta_t bằng độ biến thiên động lượng của vật.",
+                "Xung lượng của lực bằng thương số giữa động lượng và thời gian.",
+                "Xung lượng của lực luôn bằng 0 nếu vật chuyển động tròn đều.",
+                "Độ biến thiên động lượng bằng công của lực."
+            ],
+            correct: 0,
+            explain: "Định lý xung lượng của lực: F * delta_t = delta_p = p2 - p1."
+        },
+        {
+            q: "Câu 14. Công của lực ma sát trượt luôn mang giá trị",
+            options: [
+                "dương.",
+                "âm.",
+                "bằng 0.",
+                "tùy thuộc vào chiều chuyển động."
+            ],
+            correct: 1,
+            explain: "Lực ma sát trượt luôn ngược chiều chuyển động (góc alpha = 180 độ) nên cos(180) = -1, dẫn đến công của lực ma sát trượt luôn là công cản (âm)."
+        },
+        {
+            q: "Câu 15. Lực nào sau đây KHÔNG phải là lực thế?",
+            options: [
+                "Trọng lực.",
+                "Lực đàn hồi của lò xo.",
+                "Lực ma sát trượt.",
+                "Lực hấp dẫn."
+            ],
+            correct: 2,
+            explain: "Lực ma sát trượt là lực không thế (lực ma sát làm hao phí cơ năng), công của nó phụ thuộc vào dạng đường đi."
+        },
+        {
+            q: "Câu 16. Một súng đại bác khối lượng M bắn một viên đạn khối lượng m với vận tốc v. Vận tốc giật lùi V của súng ngay sau khi bắn được tính theo công thức nào (bỏ qua ma sát)?",
+            options: [
+                "V = -(m / M) * v.",
+                "V = (M / m) * v.",
+                "V = -(M / m) * v.",
+                "V = (m / M) * v."
+            ],
+            correct: 0,
+            explain: "Theo định luật bảo toàn động lượng cho hệ kín (súng + đạn): 0 = M * V + m * v => V = -(m / M) * v."
+        },
+        {
+            q: "Câu 17. Thế năng trọng trường của một vật khối lượng m ở độ cao h so với mốc thế năng được tính bằng công thức",
+            options: [
+                "W_t = m * g * h.",
+                "W_t = 0.5 * m * g * h.",
+                "W_t = m * g / h.",
+                "W_t = m * h^2."
+            ],
+            correct: 0,
+            explain: "Biểu thức thế năng trọng trường: W_t = m * g * h."
+        },
+        {
+            q: "Câu 18. Một lò xo có độ cứng k bị biến dạng một đoạn x. Thế năng đàn hồi của lò xo được xác định bằng công thức nào?",
+            options: [
+                "W_t = k * x.",
+                "W_t = 0.5 * k * x^2.",
+                "W_t = 0.5 * k * x.",
+                "W_t = k * x^2."
+            ],
+            correct: 1,
+            explain: "Biểu thức thế năng đàn hồi của lò xo: W_t = 0.5 * k * x^2."
+        },
+        {
+            q: "Câu 19. Khi vật chuyển động thẳng đều dưới tác dụng của lực kéo F cùng hướng chuyển động, nhận xét nào sau đây đúng?",
+            options: [
+                "Công của lực kéo bằng 0.",
+                "Động năng của vật biến thiên.",
+                "Công của lực kéo có độ lớn bằng công của lực ma sát cản trở chuyển động.",
+                "Cơ năng của vật tăng liên tục."
+            ],
+            correct: 2,
+            explain: "Chuyển động thẳng đều có tổng lực bằng 0 => F_kéo = F_masat => Công lực kéo triệt tiêu về độ lớn với công cản của lực ma sát."
+        },
+        {
+            q: "Câu 20. Khi ném một vật thẳng đứng lên cao, trong quá trình vật chuyển động đi lên (bỏ qua sức cản không khí)",
+            options: [
+                "Động năng tăng, thế năng giảm, cơ năng không đổi.",
+                "Động năng giảm, thế năng tăng, cơ năng không đổi.",
+                "Động năng tăng, thế năng tăng, cơ năng tăng.",
+                "Động năng giảm, thế năng giảm, cơ năng giảm."
+            ],
+            correct: 1,
+            explain: "Khi lên cao, độ cao h tăng (thế năng tăng), vận tốc v giảm (động năng giảm), tổng cơ năng được bảo toàn."
+        },
+        {
+            q: "Câu 21. Hai vật có khối lượng m1 và m2 (m1 = 2*m2) chuyển động với cùng động năng. Tỷ số độ lớn động lượng p1 / p2 của hai vật là",
+            options: [
+                "2.",
+                "căn bậc hai của 2.",
+                "0.5.",
+                "4."
+            ],
+            correct: 1,
+            explain: "Mối liên hệ p^2 = 2 * m * W_d. Khi W_d bằng nhau thì p tỉ lệ thuận với căn bậc hai của m. Do m1 = 2*m2 nên p1/p2 = căn(2)."
+        },
+        {
+            q: "Câu 22. Trong va chạm đàn hồi trực diện giữa hai quả cầu cùng khối lượng m1 = m2, quả cầu 1 chuyển động v1 đến va chạm với quả cầu 2 đang đứng yên. Sau va chạm",
+            options: [
+                "Quả cầu 1 dừng lại, quả cầu 2 chuyển động với vận tốc v1.",
+                "Hai quả cầu dính vào nhau chuyển động với vận tốc v1/2.",
+                "Quả cầu 1 bật ngược lại với vận tốc -v1.",
+                "Cả hai quả cầu cùng đứng yên."
+            ],
+            correct: 0,
+            explain: "Trong va chạm đàn hồi trực diện cùng khối lượng, hai vật trao đổi vận tốc cho nhau. Vật 1 dừng lại, vật 2 nhận vận tốc v1."
+        },
+        {
+            q: "Câu 23. Trong chuyển động tròn đều của một chất điểm, lực hướng tâm thực hiện một công bằng bao nhiêu?",
+            options: [
+                "A > 0.",
+                "A < 0.",
+                "A = 0.",
+                "Phụ thuộc vào bán kính quỹ đạo."
+            ],
+            correct: 2,
+            explain: "Lực hướng tâm luôn vuông góc với véc-tơ vận tốc (hướng chuyển động) nên góc alpha = 90 độ => cos(90) = 0 => Công A = 0."
+        },
+        {
+            q: "Câu 24. Động năng của vật thay đổi như thế nào khi vật chuyển động rơi tự do từ trên cao xuống?",
+            options: [
+                "Giảm dần.",
+                "Tăng dần.",
+                "Không đổi.",
+                "Bằng 0."
+            ],
+            correct: 1,
+            explain: "Rơi tự do là chuyển động nhanh dần đều (v tăng dần), do đó động năng W_d = 0.5 * m * v^2 tăng dần."
+        },
+        {
+            q: "Câu 25. Biểu thức nào sau đây thể hiện định luật bảo toàn động lượng cho hệ gồm hai vật?",
+            options: [
+                "m1 * v1 + m2 * v2 = m1 * v1' + m2 * v2' (dạng véc-tơ).",
+                "m1 * v1 - m2 * v2 = const.",
+                "m1 * v1^2 + m2 * v2^2 = const.",
+                "m1 / v1 = m2 / v2."
+            ],
+            correct: 0,
+            explain: "Tổng véc-tơ động lượng của hệ trước va chạm bằng tổng véc-tơ động lượng của hệ sau va chạm."
+        },
+        {
+            q: "Câu 26. Một vật được thả rơi tự do không vận tốc đầu từ độ cao h. Tại vị trí nào thì động năng bằng thế năng (chọn mốc thế năng tại mặt đất)?",
+            options: [
+                "Tại mặt đất.",
+                "Ở độ cao h / 2.",
+                "Ở độ cao h / 4.",
+                "Ở đỉnh h."
+            ],
+            correct: 1,
+            explain: "Bảo toàn cơ năng: W = W_t_max = mgh. Khi W_d = W_t thì W = 2 * W_t => mgh = 2 * mgh' => h' = h / 2."
+        },
+        {
+            q: "Câu 27. Đơn vị Watt (W) là đơn vị đo của đại lượng nào?",
+            options: [
+                "Công cơ học.",
+                "Công suất.",
+                "Động năng.",
+                "Lực."
+            ],
+            correct: 1,
+            explain: "Watt (W) là đơn vị chuẩn trong hệ SI dùng để đo công suất (1 W = 1 J/s)."
+        },
+        {
+            q: "Câu 28. Nếu tổng ngoại lực tác dụng lên hệ vật bằng 0 thì đại lượng nào của hệ chắc chắn bảo toàn?",
+            options: [
+                "Động năng.",
+                "Thế năng.",
+                "Động lượng toàn phần.",
+                "Nhiệt năng."
+            ],
+            correct: 2,
+            explain: "Nếu tổng ngoại lực bằng 0 thì hệ là hệ cô lập, động lượng toàn phần của hệ bảo toàn."
+        },
+        {
+            q: "Câu 29. Lực cản của không khí tác dụng lên vật chuyển động rơi trong không khí là",
+            options: [
+                "lực thế.",
+                "lực không thế (lực làm hao phí cơ năng).",
+                "lực luôn sinh công dương.",
+                "lực không thực hiện công."
+            ],
+            correct: 1,
+            explain: "Lực cản không khí là lực không thế, làm một phần cơ năng biến đổi thành nhiệt năng."
+        },
+        {
+            q: "Câu 30. Một vật khối lượng m = 1 kg có vận tốc v = 2 m/s. Động lượng của vật có độ lớn là",
+            options: [
+                "1 kg.m/s.",
+                "2 kg.m/s.",
+                "4 kg.m/s.",
+                "0.5 kg.m/s."
+            ],
+            correct: 1,
+            explain: "p = m * v = 1 * 2 = 2 kg.m/s."
+        },
+        {
+            q: "Câu 31. Một vật khối lượng m = 2 kg có vận tốc v = 3 m/s. Động năng của vật bằng",
+            options: [
+                "3 J.",
+                "6 J.",
+                "9 J.",
+                "18 J."
+            ],
+            correct: 2,
+            explain: "W_d = 0.5 * m * v^2 = 0.5 * 2 * 3^2 = 9 J."
+        },
+        {
+            q: "Câu 32. Chuyển động nào sau đây ứng dụng nguyên tắc chuyển động bằng phản lực?",
+            options: [
+                "Xe đạp chạy trên đường.",
+                "Tên lửa bay vào không trung.",
+                "Con lắc đơn dao động.",
+                "Thuyền buồm chạy theo chiều gió."
+            ],
+            correct: 1,
+            explain: "Tên lửa chuyển động nhờ sự phun khí nén về phía sau (nguyên tắc phản lực - bảo toàn động lượng)."
+        },
+        {
+            q: "Câu 33. Khi một con lắc đơn dao động điều hòa từ vị trí biên về vị trí cân bằng thì",
+            options: [
+                "thế năng chuyển hóa thành động năng.",
+                "động năng chuyển hóa thành thế năng.",
+                "cơ năng giảm dần.",
+                "thế năng tăng dần."
+            ],
+            correct: 0,
+            explain: "Từ biên về vị trí cân bằng, độ cao giảm (thế năng giảm) và vận tốc tăng (động năng tăng), thế năng chuyển hóa thành động năng."
+        },
+        {
+            q: "Câu 34. Biểu thức P = F * v * cos(alpha) dùng để tính",
+            options: [
+                "công suất trung bình.",
+                "công suất tức thời.",
+                "công cơ học.",
+                "động năng."
+            ],
+            correct: 1,
+            explain: "P = F * v * cos(alpha) là công thức tính công suất tức thời khi lực F tác dụng lên vật đang chuyển động với vận tốc v."
+        },
+        {
+            q: "Câu 35. Va chạm mềm là va chạm mà sau khi va chạm",
+            options: [
+                "hai vật bật ngược trở lại.",
+                "hai vật dính vào nhau và chuyển động với cùng vận tốc.",
+                "động năng của hệ được bảo toàn.",
+                "vận tốc của hai vật không thay đổi."
+            ],
+            correct: 1,
+            explain: "Định nghĩa va chạm mềm: Sau va chạm hai vật dính làm một và chuyển động cùng vận tốc."
+        },
+        {
+            q: "Câu 36. Lực làm cho vật chuyển động tròn đều có công bằng 0 vì",
+            options: [
+                "vận tốc vật không đổi.",
+                "lực luôn vuông góc với véc-tơ vận tốc.",
+                "vật không bị dịch chuyển.",
+                "lực hướng tâm là lực thế."
+            ],
+            correct: 1,
+            explain: "Công A = F * s * cos(alpha). Do lực hướng tâm vuông góc với vận tốc (alpha = 90 độ) nên cos(90) = 0 => A = 0."
+        },
+        {
+            q: "Câu 37. Thế năng của một vật phụ thuộc vào",
+            options: [
+                "vận tốc của vật.",
+                "vị trí của vật so với mốc chọn thế năng.",
+                "gia tốc của vật.",
+                "thời gian chuyển động."
+            ],
+            correct: 1,
+            explain: "Thế năng là năng lượng lưu trữ phụ thuộc vào vị trí tương quan của vật so với mốc thế năng."
+        },
+        {
+            q: "Câu 38. Động lượng là đại lượng",
+            options: [
+                "vô hướng, luôn dương.",
+                "vô hướng, có thể âm hoặc dương.",
+                "véc-tơ, cùng hướng với véc-tơ vận tốc.",
+                "véc-tơ, ngược hướng với véc-tơ vận tốc."
+            ],
+            correct: 2,
+            explain: "Vì p = m * v với m > 0 nên p là véc-tơ cùng hướng với véc-tơ vận tốc v."
+        },
+        {
+            q: "Câu 39. Độ biến thiên thế năng của một vật trong trường trọng lực bằng",
+            options: [
+                "công của trọng lực nhưng mang dấu ngược lại (A = W_t1 - W_t2 = -delta_W_t).",
+                "công của lực ma sát.",
+                "độ biến thiên động năng.",
+                "cơ năng toàn phần."
+            ],
+            correct: 0,
+            explain: "Công của lực thế bằng hiệu thế năng đầu và cuối: A = W_t1 - W_t2 = -(W_t2 - W_t1) = -delta_W_t."
+        },
+        {
+            q: "Câu 40. Một lò xo có độ cứng k = 100 N/m bị nén một đoạn 0,1 m. Thế năng đàn hồi của lò xo là",
+            options: [
+                "1 J.",
+                "0.5 J.",
+                "0.1 J.",
+                "5 J."
+            ],
+            correct: 1,
+            explain: "W_t = 0.5 * k * x^2 = 0.5 * 100 * (0.1)^2 = 0.5 J."
+        },
+        {
+            q: "Câu 41. Phát biểu nào đúng về công phát động?",
+            options: [
+                "Là công do lực sinh ra khi góc hợp bởi lực và hướng dịch chuyển 0 <= alpha < 90 độ (A > 0).",
+                "Là công do lực sinh ra khi góc hợp bởi lực và hướng dịch chuyển alpha = 90 độ.",
+                "Là công do lực cản sinh ra khi alpha > 90 độ.",
+                "Luôn có giá trị âm."
+            ],
+            correct: 0,
+            explain: "Khi 0 <= alpha < 90 độ thì cos(alpha) > 0 => Công A > 0 được gọi là công phát động (công dương)."
+        },
+        {
+            q: "Câu 42. Khi một ô tô đang chạy lên dốc với tốc độ không đổi, cơ năng của ô tô sẽ",
+            options: [
+                "không đổi.",
+                "tăng lên.",
+                "giảm đi.",
+                "bằng 0."
+            ],
+            correct: 1,
+            explain: "Tốc độ không đổi => Động năng không đổi. Độ cao tăng => Thế năng tăng. Do đó tổng cơ năng (Động năng + Thế năng) tăng lên."
+        },
+        {
+            q: "Câu 43. Một vật trượt có ma sát trên mặt phẳng nghiêng đi xuống. Cơ năng của vật sẽ",
+            options: [
+                "được bảo toàn.",
+                "tăng dần.",
+                "giảm dần do công cản của lực ma sát.",
+                "bằng 0."
+            ],
+            correct: 2,
+            explain: "Lực ma sát trượt sinh công âm làm một phần cơ năng chuyển hóa thành nhiệt năng, khiến cơ năng của vật giảm dần."
+        },
+        {
+            q: "Câu 44. Độ biến thiên động lượng của một vật trong một khoảng thời gian delta_t tỉ lệ thuận với",
+            options: [
+                "quãng đường vật đi được.",
+                "xung lượng của tổng ngoại lực tác dụng lên vật trong khoảng thời gian đó.",
+                "thế năng của vật.",
+                "công của lực kéo."
+            ],
+            correct: 1,
+            explain: "Theo định lý xung lượng: delta_p = F * delta_t (Độ biến thiên động lượng bằng xung lượng của ngoại lực)."
+        },
+        {
+            q: "Câu 45. Một vật rơi tự do không vận tốc đầu, bỏ qua sức cản không khí. Tỷ số giữa động năng và thế năng của vật ở vị trí cách mặt đất một khoảng bằng 1/3 độ cao ban đầu là bao nhiêu?",
+            options: [
+                "1/3.",
+                "2.",
+                "3.",
+                "1/2."
+            ],
+            correct: 1,
+            explain: "Tại vị trí h' = h / 3 thì thế năng W_t' = W_t_max / 3 = W / 3. Động năng W_d' = W - W_t' = 2*W / 3. Do đó W_d' / W_t' = 2."
+        },
+        {
+            q: "Câu 46. Gọi m1, m2 là khối lượng hai vật; v1, v2 là vận tốc trước va chạm. Vận tốc V của hai vật sau va chạm mềm được tính bằng",
+            options: [
+                "V = (m1*v1 + m2*v2) / (m1 + m2) (dạng véc-tơ).",
+                "V = (m1*v1 - m2*v2) / (m1 - m2).",
+                "V = (m1 + m2) / (m1*v1 + m2*v2).",
+                "V = v1 + v2."
+            ],
+            correct: 0,
+            explain: "Theo định luật bảo toàn động lượng: m1*v1 + m2*v2 = (m1 + m2)*V => V = (m1*v1 + m2*v2) / (m1 + m2)."
+        },
+        {
+            q: "Câu 47. Công cơ học là đại lượng",
+            options: [
+                "véc-tơ, luôn dương.",
+                "vô hướng, có thể âm, dương hoặc bằng 0.",
+                "véc-tơ, có thể âm hoặc dương.",
+                "vô hướng, luôn dương."
+            ],
+            correct: 1,
+            explain: "Công A = F * s * cos(alpha) là đại lượng vô hướng (đo bằng Joule), giá trị phụ thuộc vào góc alpha nên có thể âm, dương hoặc bằng 0."
+        },
+        {
+            q: "Câu 48. Động năng của vật là năng lượng vật có được do",
+            options: [
+                "vị trí của nó so với Trái Đất.",
+                "nó đang chuyển động.",
+                "nó bị biến dạng đàn hồi.",
+                "nhiệt độ của nó tăng cao."
+            ],
+            correct: 1,
+            explain: "Động năng là dạng năng lượng mà vật có được do chuyển động (W_d = 0.5 * m * v^2)."
+        },
+        {
+            q: "Câu 49. Mốc thế năng trọng trường thường được chọn tại",
+            options: [
+                "mặt đất.",
+                "vị trí cao nhất của quỹ đạo.",
+                "vị trí ban đầu của vật.",
+                "bất kỳ vị trí thuận tiện nào (thường chọn mặt đất)."
             ],
             correct: 3,
-            explain: "Trong chuyển động tịnh tiến, mọi điểm trên vật rắn có quỹ đạo giống hệt nhau, cùng vận tốc và cùng gia tốc tại mọi thời điểm."
+            explain: "Mốc thế năng có thể chọn tùy ý tùy thuộc vào bài toán, thông thường chọn tại mặt đất để tính toán đơn giản nhất."
         },
         {
-            q: "Câu 8. Một người vũ công đang thực hiện động tác xoay tròn trên băng. Khi người đó thu hai tay và co chân lại gần sát trục quay dọc theo cơ thể thì",
+            q: "Câu 50. Khi vật chuyển động chậm dần đều thì động năng của vật",
             options: [
-                "Mômen quán tính tăng, vận tốc góc giảm.",
-                "Mômen quán tính giảm, vận tốc góc tăng.",
-                "Cả mômen quán tính và vận tốc góc đều tăng.",
-                "Cả mômen quán tính và vận tốc góc đều không đổi"
+                "tăng dần đều.",
+                "giảm dần.",
+                "không đổi.",
+                "bằng 0."
             ],
             correct: 1,
-            explain: "Thu tay chân làm mômen quán tính giảm, kéo theo tốc độ góc quay tăng."
+            explain: "Chuyển động chậm dần đều làm độ lớn vận tốc v giảm dần theo thời gian, do đó động năng giảm dần."
         },
         {
-            q: "Câu 9. Một đĩa đặc và một vành tròn có cùng khối lượng và bán kính, cùng thả lăn không trượt không vận tốc đầu từ đỉnh một mặt phẳng nghiêng xuống. Vật nào sẽ xuống đến chân mặt phẳng nghiêng trước?",
+            q: "Câu 51. Đơn vị nào sau đây KHÔNG phải là đơn vị của công hoặc năng lượng?",
             options: [
-                "Vành tròn.",
-                "Đĩa đặc.",
-                "Cả hai xuống cùng một lúc.",
-                "Phụ thuộc vào góc nghiêng của mặt phẳng."
+                "Joule (J).",
+                "N.m.",
+                "kWh.",
+                "Watt (W)."
             ],
-            correct: 1,
-            explain: "Đĩa đặc có mômen quán tính nhỏ hơn vành tròn nên tốn ít năng lượng quay hơn, giúp tăng tốc nhanh hơn và đến chân dốc trước."
+            correct: 3,
+            explain: "Watt (W) là đơn vị của công suất. Joule, N.m và kWh đều là đơn vị của công/năng lượng."
         },
         {
-            q: "Câu 10. Khi một vật rắn lăn không trượt trên một mặt phẳng ngang, vận tốc tức thời của điểm tiếp xúc giữa vật rắn và mặt phẳng ngang bằng bao nhiêu?",
+            q: "Câu 52. Hệ thức liên hệ giữa động năng W_d và động lượng p của một chất điểm khối lượng m là",
             options: [
-                "Bằng vận tốc của khối tâm.",
-                "Bằng 0.",
-                "Bằng 2 lần vận tốc của khối tâm.",
-                "Phụ thuộc vào bán kính của vật rắn"
-            ],
-            correct: 1,
-            explain: "Điều kiện lăn không trượt là điểm tiếp xúc với mặt phẳng đứng yên tức thời, tức vận tốc tại điểm tiếp xúc bằng 0."
-        },
-        {
-            q: "Câu 11. Mô-men quán tính của một vật rắn đối với một trục quay phụ thuộc vào yếu tố nào sau đây?",
-            options: [
-                "Khối lượng của vật và vị trí của trục quay so với vật.",
-                "Tốc độ góc của vật khi quay.",
-                "Mô-men lực tác dụng lên vật.",
-                "Gia tốc góc của vật."
+                "W_d = p^2 / (2*m).",
+                "W_d = 2*m*p^2.",
+                "W_d = p / m.",
+                "W_d = 0.5 * m * p."
             ],
             correct: 0,
-            explain: "Mômen quán tính phụ thuộc vào tổng khối lượng, hình dạng kích thước và vị trí của trục quay."
+            explain: "Vì p = m * v => p^2 = m^2 * v^2 => W_d = 0.5 * m * v^2 = p^2 / (2*m)."
         },
         {
-            q: "Câu 12. Phương trình cơ bản của chuyển động quay của vật rắn quanh một trục cố định là",
+            q: "Câu 53. Lực cản sinh công âm vì góc hợp bởi lực cản và véc-tơ vận tốc alpha thỏa mãn",
             options: [
-                "M = I * omega.",
-                "M = I * beta.",
-                "F = ma.",
-                "L = I * beta."
+                "alpha = 0 độ.",
+                "0 < alpha < 90 độ.",
+                "alpha = 90 độ.",
+                "90 < alpha <= 180 độ."
             ],
-            correct: 1,
-            explain: "Phương trình động lực học quay là M = I * beta."
+            correct: 3,
+            explain: "Lực cản chống lại chuyển động nên góc alpha thuộc khoảng (90, 180] độ, làm cos(alpha) < 0 => A < 0."
         },
         {
-            q: "Câu 13. Một vận động viên trượt băng nghệ thuật đang quay quanh trục đứng với hai tay dang rộng. Khi người đó co hai tay lại gần cơ thể thì",
+            q: "Câu 54. Một người nâng một vật khối lượng 5 kg lên cao 2 m theo phương thẳng đứng với vận tốc không đổi. Lấy g = 10 m/s^2. Công của người đó đã thực hiện là",
             options: [
-                "Mô-men quán tính tăng và tốc độ góc giảm.",
-                "Mô-men quán tính giảm và tốc độ góc tăng.",
-                "Cả mô-men quán tính và tốc độ góc đều tăng.",
-                "Cả mô-men quán tính và tốc độ góc đều không đổi."
-            ],
-            correct: 1,
-            explain: "Co tay làm giảm mômen quán tính và làm tăng tốc độ góc."
-        },
-        {
-            q: "Câu 14. Động năng quay của một vật rắn có mô-men quán tính I đang quay với tốc độ góc omega được tính bằng công thức",
-            options: [
-                "W_đ = 0.5I * omega.",
-                "W_đ = I * omega^2.",
-                "W_đ = 0.5I * omega^2.",
-                "W_đ = 0.5I^2 * omega."
+                "10 J.",
+                "50 J.",
+                "100 J.",
+                "200 J."
             ],
             correct: 2,
-            explain: "Công thức động năng quay là W_đ = 0.5 * I * omega^2."
+            explain: "A = F * h = m * g * h = 5 * 10 * 2 = 100 J."
         },
         {
-            q: "Câu 15. Định luật bảo toàn momen động lượng phát biểu: Nếu tổng momen ngoại lực tác dụng lên vật rắn đối với một trục quay bằng không thì",
+            q: "Câu 55. Trong hệ kín gồm hai vật va chạm hoàn toàn đàn hồi, đại lượng nào sau đây KHÔNG bảo toàn?",
             options: [
-                "Vật chắc chắn phải đứng yên.",
-                "Vật quay nhanh dần đều.",
-                "Momen động lượng của vật đối với trục đó được bảo toàn.",
-                "Momen quán tính của vật bằng không."
+                "Động lượng của hệ.",
+                "Động năng của hệ.",
+                "Cơ năng của hệ.",
+                "Động lượng của riêng từng vật."
             ],
-            correct: 2,
-            explain: "Mômen ngoại lực tổng hợp bằng 0 thì mômen động lượng được bảo toàn."
+            correct: 3,
+            explain: "Trong va chạm đàn hồi, động lượng TOÀN PHẦN của hệ bảo toàn, nhưng động lượng của riêng từng vật biến đổi do có lực tương tác giữa hai vật."
         },
         {
-            q: "Câu 16. Moment quán tính I của một vật rắn đối với một trục quay cố định có ý nghĩa vật lý quan trọng nào sau đây?",
+            q: "Câu 56. Trường lực thế là trường lực mà công của lực tác dụng làm dịch chuyển chất điểm trong trường đó",
             options: [
-                "Nó đặc trưng cho mức độ cản trở sự thay đổi trạng thái chuyển động quay của vật (đóng vai trò tương đương với khối lượng trong chuyển động tịnh tiến).",
-                "Nó là đại lượng đo lường tổng năng lượng nhiệt mà vật rắn tích lũy được trong quá trình quay.",
-                "Nó đặc trưng cho lực tương tác hấp dẫn giữa các phần tử bên trong vật rắn.",
-                "Nó cho biết chiều của vectơ vận tốc góc và gia tốc góc của vật rắn tại mỗi thời điểm."
+                "luôn luôn bằng 0.",
+                "chỉ phụ thuộc vị trí đầu và cuối, không phụ thuộc dạng đường đi.",
+                "phụ thuộc vào vận tốc chuyển động.",
+                "phụ thuộc vào thời gian chuyển động."
+            ],
+            correct: 1,
+            explain: "Định nghĩa trường lực thế: Công của lực thế không phụ thuộc vào đường đi mà chỉ phụ thuộc vào điểm đầu và điểm cuối."
+        },
+        {
+            q: "Câu 57. Một vật nặng khối lượng m gắn vào lò xo đứng quay tròn đều trong mặt phẳng ngang. Công của lực đàn hồi trong một vòng quay bằng",
+            options: [
+                "0.",
+                "0.5 * k * x^2.",
+                "k * x * 2*pi*r.",
+                "m * v^2."
             ],
             correct: 0,
-            explain: "Mômen quán tính I đặc trưng cho mức quán tính của vật trong chuyển động quay (tương đương khối lượng trong tịnh tiến)."
+            explain: "Lực đàn hồi đóng vai trò lực hướng tâm (vuông góc với vận tốc) nên công bằng 0. Hoặc điểm đầu và điểm cuối trùng nhau nên công của lực thế bằng 0."
         },
         {
-            q: "Câu 17. Khi một vận động viên trượt băng đang quay vòng tròn với hai tay dang rộng bỗng thu tay lại gần sát cơ thể thì tốc độ quay của họ tăng lên rõ rệt. Hiện tượng này được giải thích chính xác nhất bằng định luật vật lý nào?",
+            q: "Câu 58. Một ô tô khối lượng 1 tấn đang chạy với vận tốc 72 km/h (20 m/s). Động năng của ô tô bằng",
             options: [
-                "Định luật bảo toàn năng lượng cơ học.",
-                "Định luật bảo toàn động lượng tịnh tiến.",
-                "Định luật bảo toàn momen động lượng (do momen ngoại lực tác dụng lên người coi như bằng không, khi momen quán tính giảm thì vận tốc góc phải tăng tương ứng).",
-                "Định luật II Newton về chuyển động quay biến đổi đều."
+                "200.000 J.",
+                "400.000 J.",
+                "20.000 J.",
+                "100.000 J."
+            ],
+            correct: 0,
+            explain: "W_d = 0.5 * m * v^2 = 0.5 * 1000 * 20^2 = 200.000 J = 200 kJ."
+        },
+        {
+            q: "Câu 59. Lực thực hiện công âm khi góc alpha giữa véc-tơ lực và véc-tơ vận tốc là góc",
+            options: [
+                "nhọn.",
+                "vuông.",
+                "tày.",
+                "bằng 0 độ."
             ],
             correct: 2,
-            explain: "Hiện tượng được giải thích bằng định luật bảo toàn mômen động lượng."
+            explain: "Góc tù (90 < alpha <= 180 độ) có cos(alpha) < 0 nên công A = F * s * cos(alpha) < 0 (công cản/công âm)."
         },
         {
-            q: "Câu 18. Phương trình cơ bản của động lực học vật rắn quay quanh một trục cố định có dạng tau = I * beta. Về mặt ý nghĩa và cấu trúc toán học, phương trình này tương đương với định luật nào trong chuyển động tịnh tiến?",
+            q: "Câu 60. Va chạm trực diện giữa hai vật m1 và m2 là va chạm mà",
+            options: [
+                "véc-tơ vận tốc của hai vật trước va chạm nằm trên đường nối tâm hai vật.",
+                "hai vật dính liền vào nhau sau va chạm.",
+                "vận tốc hai vật vuông góc nhau.",
+                "không có lực tương tác giữa hai vật."
+            ],
+            correct: 0,
+            explain: "Định nghĩa va chạm trực diện (xung kích tâm): Véc-tơ vận tốc trước va chạm nằm trên đường nối tâm của hai vật."
+        },
+        {
+            q: "Câu 61. Định luật bảo toàn động lượng là hệ quả trực tiếp của định luật nào trong cơ học Newton?",
             options: [
                 "Định luật I Newton.",
-                "Định luật II Newton (F = ma).",
-                "Định luật III Newton.",
+                "Định luật II và III Newton.",
+                "Định luật vạn vật hấp dẫn.",
                 "Định luật bảo toàn cơ năng."
             ],
             correct: 1,
-            explain: "Phương trình M = I * beta tương đương với định luật II Newton F = ma."
+            explain: "Định luật bảo toàn động lượng được suy ra từ Định luật II (F = dp/dt) và Định luật III Newton (F12 = -F21)."
         },
         {
-            q: "Câu 19. Hai vật có cùng khối lượng và cùng bán kính. Một vật có khối lượng phân bố chủ yếu gần trục quay, vật còn lại có khối lượng phân bố chủ yếu xa trục quay. Khi quay quanh cùng một trục, vật nào có momen quán tính lớn hơn?",
+            q: "Câu 62. Công suất trung bình được tính bằng biểu thức nào?",
             options: [
-                "Vật có khối lượng tập trung gần trục quay.",
-                "Vật có khối lượng tập trung xa trục quay.",
-                "Hai vật có momen quán tính bằng nhau vì chúng có cùng khối lượng.",
-                "Không thể xác định nếu chưa biết vận tốc góc."
+                "P = A / t.",
+                "P = A * t.",
+                "P = F * s.",
+                "P = 0.5 * A * t^2."
             ],
-            correct: 1,
-            explain: "Khối lượng tập trung xa trục quay làm tăng khoảng cách r, dẫn đến mômen quán tính lớn hơn."
+            correct: 0,
+            explain: "Công suất trung bình P = A / t (bằng công thực hiện chia cho khoảng thời gian t)."
         },
         {
-            q: "Câu 20. Tổng động năng của một vật rắn thực hiện chuyển động phẳng song song (vừa tịnh tiến vừa quay) được tính bằng đại lượng nào?",
+            q: "Câu 63. Một vật trượt từ đỉnh một mặt phẳng nghiêng hoàn toàn nhẵn (không ma sát) xuống chân dốc. Nhận xét nào đúng?",
             options: [
-                "Chỉ bằng động năng tịnh tiến của khối tâm vật rắn.",
-                "Chỉ bằng động năng quay của vật rắn quanh trục đi qua khối tâm.",
-                "Bằng tổng của động năng tịnh tiến của khối tâm và động năng quay quanh trục đi qua khối tâm đó.",
-                "Bằng tổng động năng của tất cả các điểm chất điểm thành phần cộng lại mà không cần qua khối tâm."
+                "Động năng giảm, thế năng tăng.",
+                "Cơ năng tăng dần.",
+                "Thế năng chuyển hóa hoàn toàn thành động năng.",
+                "Cơ năng bị tiêu hao thành nhiệt."
             ],
             correct: 2,
-            explain: "Động năng tổng cộng bằng tổng động năng tịnh tiến của khối tâm và động năng quay quanh khối tâm (Định lý König)."
+            explain: "Do không có ma sát (chỉ có trọng lực sinh công) nên cơ năng bảo toàn, thế năng ở đỉnh dốc chuyển hóa hoàn toàn thành động năng tại chân dốc."
         },
         {
-            q: "Câu 21. Một quạt trần đang quay đều quanh trục cố định. So sánh một điểm gần tâm cánh quạt và một điểm gần đầu cánh.",
+            q: "Câu 64. Một quả bóng khối lượng m bay với vận tốc v đập vuông góc vào tường và bật ngược trở lại với cùng độ lớn vận tốc v. Độ biến thiên động lượng delta_p của quả bóng là",
             options: [
-                "Chúng có cùng tốc độ góc và cùng tốc độ dài.",
-                "Chúng có cùng tốc độ góc; điểm gần đầu cánh có tốc độ dài lớn hơn.",
-                "Điểm gần đầu cánh có cả tốc độ góc lẫn tốc độ dài lớn hơn.",
-                "Điểm gần tâm có tốc độ dài lớn hơn."
-            ],
-            correct: 1,
-            explain: "Mọi điểm có chung tốc độ góc; điểm ở đầu cánh có bán kính r lớn hơn nên có vận tốc dài lớn hơn."
-        },
-        {
-            q: "Câu 22. Vì sao cùng một lực đẩy vuông góc với cánh cửa, đẩy ở gần tay nắm thường làm cửa quay dễ hơn đẩy sát bản lề?",
-            options: [
-                "Khối lượng cửa nhỏ đi khi đẩy gần tay nắm.",
-                "Cánh tay đòn của lực lớn hơn.",
-                "Lực ma sát ở bản lề biến mất.",
-                "Trọng lực đổi chiều."
-            ],
-            correct: 1,
-            explain: "Tay nắm ở xa bản lề nghĩa là cánh tay đòn lớn hơn, tạo ra mômen lực lớn hơn giúp cửa quay dễ hơn."
-        },
-        {
-            q: "Câu 23. Một người ngồi trên ghế xoay đang quay, hai tay dang ngang. Người ấy thu tay sát vào người; bỏ qua mômen lực ngoài quanh trục ghế. Tốc độ góc sẽ",
-            options: [
-                "Tăng.",
-                "Giảm.",
-                "Không đổi.",
-                "Về 0."
-            ],
-            correct: 0,
-            explain: "Thu tay làm mômen quán tính giảm, kéo theo tốc độ góc tăng."
-        },
-        {
-            q: "Câu 24. Một quả cầu đặc, một quả cầu rỗng, một hình trụ đặc và một hình trụ rỗng đồng chất có cùng khối lượng, bán kính, thả từ trạng thái nghỉ ở cùng độ cao trên mặt phẳng nghiêng đủ nhám để lăn không trượt. Vật nào tới chân dốc trước?",
-            options: [
-                "Quả cầu đặc.",
-                "Quả cầu rỗng.",
-                "Hình trụ đặc.",
-                "Hình trụ rỗng."
-            ],
-            correct: 0,
-            explain: "Quả cầu đặc có mômen quán tính nhỏ nhất nên tốn ít năng lượng cho phần quay, tới chân dốc đầu tiên."
-        },
-        {
-            q: "Câu 25. Hai bánh xe có cùng khối lượng và bán kính. Bánh xe P có phần lớn khối lượng tập trung gần vành; bánh xe Q có phần lớn khối lượng gần trục. Quay quanh trục qua tâm, bánh nào có mômen quán tính lớn hơn?",
-            options: [
-                "P.",
-                "Q.",
-                "Bằng nhau vì cùng khối lượng và bán kính.",
-                "Không thể xác định nếu chưa biết tốc độ quay."
-            ],
-            correct: 0,
-            explain: "Bánh xe P có khối lượng tập trung ở vành (xa trục hơn) nên mômen quán tính lớn hơn."
-        },
-        {
-            q: "Câu 26. Khi đẩy cánh cửa với cùng một lực vuông góc mặt cửa nhưng đặt tay ở gần bản lề, cửa quay chậm hơn so với khi đẩy ở mép ngoài vì",
-            options: [
-                "cánh tay đòn ngắn hơn nên mômen lực nhỏ hơn.",
-                "lực tác dụng lên cửa nhỏ hơn.",
-                "mômen quán tính của cửa đối với trục bản lề tăng lên.",
-                "ma sát ở bản lề tăng lên."
-            ],
-            correct: 0,
-            explain: "Cánh tay đòn ngắn làm mômen lực nhỏ, dẫn đến gia tốc góc nhỏ (cửa quay chậm hơn)."
-        },
-        {
-            q: "Câu 27. Một đĩa CD quay đều quanh trục cố định đi qua tâm. Xét hai điểm nằm ở hai đầu của cùng một đường kính. Phát biểu nào đúng?",
-            options: [
-                "Hai điểm có cùng vectơ vận tốc dài.",
-                "Hai điểm có tốc độ góc khác nhau.",
-                "Hai điểm có cùng tốc độ góc; vectơ vận tốc dài của chúng cùng độ lớn, ngược chiều nên tổng bằng 0.",
-                "Hai điểm có gia tốc hướng tâm cùng chiều."
+                "0.",
+                "m * v.",
+                "-2 * m * v (độ lớn là 2*m*v).",
+                "0.5 * m * v."
             ],
             correct: 2,
-            explain: "Hai điểm đối xứng qua tâm có cùng tốc độ góc, nhưng vận tốc dài ngược hướng nhau."
+            explain: "Chọn chiều dương là chiều bật ra: p1 = -m*v, p2 = +m*v => delta_p = p2 - p1 = m*v - (-m*v) = 2*m*v."
         },
         {
-            q: "Câu 28. Hai con quay có bán kính khác nhau, quay sao cho tốc độ dài của các điểm ở mép bằng nhau. Con quay nào có tốc độ góc lớn hơn?",
+            q: "Câu 65. Động năng của một vật phụ thuộc vào hệ quy chiếu vì",
             options: [
-                "Con quay có bán kính lớn hơn.",
-                "Hai con quay có cùng tốc độ góc.",
-                "Không so sánh được nếu không biết khối lượng.",
-                "Con quay có bán kính nhỏ hơn."
-            ],
-            correct: 3,
-            explain: "Từ công thức v = omega * r, khi v bằng nhau thì con quay nào có bán kính r nhỏ hơn sẽ có tốc độ góc lớn hơn."
-        },
-        {
-            q: "Câu 29. Chọn chiều dương là chiều quay ban đầu của một bánh xe. Gia tốc góc của bánh xe mang giá trị âm khi",
-            options: [
-                "bánh xe quay nhanh dần theo chiều dương.",
-                "bánh xe quay chậm dần theo chiều dương.",
-                "bánh xe quay đều.",
-                "trục quay của bánh xe bị dịch chuyển tịnh tiến."
+                "khối lượng m phụ thuộc hệ quy chiếu.",
+                "vận tốc v của vật phụ thuộc vào hệ quy chiếu.",
+                "gia tốc g phụ thuộc hệ quy chiếu.",
+                "thế năng phụ thuộc hệ quy chiếu."
             ],
             correct: 1,
-            explain: "Bánh xe quay chậm dần theo chiều dương nghĩa là vận tốc góc giảm, gia tốc góc ngược chiều chiều quay nên mang giá trị âm."
+            explain: "Vận tốc có tính tương đối (phụ thuộc vào việc chọn hệ quy chiếu) nên động năng W_d = 0.5 * m * v^2 cũng có tính tương đối."
         },
         {
-            q: "Câu 30. Dùng xà beng để bẩy một tảng đá nặng, người ta đặt điểm tựa gần tảng đá và ấn tay ở đầu xa. Cách làm này có tác dụng",
+            q: "Câu 66. Một lò xo có độ cứng k, khi bị nén một đoạn x thì lực đàn hồi có độ lớn F = k * x. Công của lực đàn hồi khi lò xo trở về trạng thái không biến dạng là",
             options: [
-                "tạo được mômen lực đủ lớn với lực tay nhỏ nhờ cánh tay đòn dài, nhưng tay phải dịch chuyển một đoạn dài hơn.",
-                "giảm công cần thực hiện để nâng tảng đá.",
-                "tăng mômen quán tính của tảng đá.",
-                "giảm trọng lượng của tảng đá."
-            ],
-            correct: 0,
-            explain: "Cánh tay đòn dài giúp tạo mômen lực lớn với lực tác dụng nhỏ (tuân theo định luật bảo toàn công)."
-        },
-        {
-            q: "Câu 31. Khi mở một cánh cửa, người ta thường đẩy ở phía xa bản lề thay vì đẩy sát bản lề vì",
-            options: [
-                "Trọng lực ở phía ngoài lớn hơn.",
-                "Cánh cửa nhẹ hơn ở phía ngoài.",
-                "Ma sát ở phía ngoài luôn bằng 0.",
-                "Cùng một lực có thể tạo mômen lớn hơn."
-            ],
-            correct: 3,
-            explain: "Cánh tay đòn lớn hơn tạo mômen lực lớn hơn với cùng một lực tác dụng."
-        },
-        {
-            q: "Câu 32. Khi dùng cờ lê để vặn một con ốc bị chặt, nếu lực tay không đổi thì dùng cán cờ lê dài hơn sẽ",
-            options: [
-                "Làm mômen lực giảm.",
-                "Làm mômen lực tăng.",
-                "Làm con ốc không chịu lực.",
-                "Không ảnh hưởng đến tác dụng quay."
+                "A = k * x^2.",
+                "A = 0.5 * k * x^2.",
+                "A = -0.5 * k * x^2.",
+                "A = k * x."
             ],
             correct: 1,
-            explain: "Cán dài hơn làm tăng cánh tay đòn d, dẫn đến mômen lực tăng lên giúp vặn ốc dễ hơn."
+            explain: "Công lực đàn hồi khi dãn/nén về vị trí cân bằng: A = W_t1 - W_t2 = 0.5 * k * x^2 - 0 = 0.5 * k * x^2."
         },
         {
-            q: "Câu 33. Khi đạp xe, lực của chân tác dụng lên bàn đạp làm bàn đạp quay quanh",
+            q: "Câu 67. Khi vận tốc của vật tăng gấp 3 lần thì",
             options: [
-                "Trục quay của bàn đạp.",
-                "Điểm tiếp xúc giữa bánh xe và mặt đường.",
-                "Tâm Trái Đất.",
-                "Trọng tâm của người."
+                "động lượng tăng 3 lần, động năng tăng 9 lần.",
+                "động lượng tăng 9 lần, động năng tăng 3 lần.",
+                "cả động lượng và động năng đều tăng 3 lần.",
+                "cả động lượng và động năng đều tăng 9 lần."
             ],
             correct: 0,
-            explain: "Bàn đạp quay quanh trục cố định của đùi đĩa."
+            explain: "Động lượng p = m * v tỉ lệ bậc nhất với v (tăng 3 lần). Động năng W_d = 0.5 * m * v^2 tỉ lệ bậc hai với v (tăng 3^2 = 9 lần)."
         },
         {
-            q: "Câu 34. Một xe tải chở hàng được xếp các kiện hàng rất cao. So với khi hàng được xếp thấp hơn, xe dễ mất ổn định hơn vì",
+            q: "Câu 68. Quá trình nào sau đây cơ năng của vật KHÔNG bảo toàn?",
             options: [
-                "Trọng lực tác dụng lên xe mất đi.",
-                "Ma sát giữa bánh xe và đường bằng 0.",
-                "Khối lượng xe giảm về 0.",
-                "Trọng tâm của hệ được nâng lên."
-            ],
-            correct: 3,
-            explain: "Xếp hàng cao làm trọng tâm của xe nâng lên cao, làm giảm độ vững vàng và dễ lật hơn."
-        },
-        {
-            q: "Câu 35. Khi dùng tay quay vô lăng ô tô, lực của tay làm vô lăng",
-            options: [
-                "Chuyển động thẳng đều.",
-                "Quay quanh trục của nó.",
-                "Rơi xuống dưới.",
-                "Chuyển động tịnh tiến."
+                "Vật rơi tự do trong chân không.",
+                "Vật trượt có ma sát trên mặt phẳng ngang.",
+                "Vật dao động nhỏ của con lắc đơn bỏ qua ma sát.",
+                "Vật ném ngang bỏ qua sức cản không khí."
             ],
             correct: 1,
-            explain: "Vô lăng chuyển động quay quanh trục cố định dưới tác dụng của ngẫu lực."
+            explain: "Trượt có ma sát sinh công cản làm giảm cơ năng tiêu hao thành nhiệt năng."
         },
         {
-            q: "Câu 36. Một vận động viên trượt băng đang quay quanh trục thẳng đứng và sau đó khép hai tay sát vào cơ thể. Bỏ qua mômen ngoại lực tác dụng lên hệ. Điều nào sau đây xảy ra?",
+            q: "Câu 69. 1 KiloWatt-giờ (1 kWh) bằng bao nhiêu Joule (J)?",
             options: [
-                "Mômen quán tính tăng và vận tốc góc giảm.",
-                "Mômen quán tính giảm và vận tốc góc cũng giảm.",
-                "Mômen quán tính giảm và vận tốc góc tăng.",
-                "Mômen quán tính và vận tốc góc đều không đổi."
+                "1.000 J.",
+                "360.000 J.",
+                "3.600.000 J.",
+                "3.600 J."
             ],
             correct: 2,
-            explain: "Khép tay làm mômen quán tính giảm, vận tốc góc tăng để bảo toàn mômen động lượng."
+            explain: "1 kWh = 1.000 W * 3.600 s = 3.600.000 J = 3.6 MJ."
         },
         {
-            q: "Câu 37. Một vật đang quay quanh một trục cố định. Nếu tổng mômen ngoại lực tác dụng lên vật theo trục quay bằng không thì",
+            q: "Câu 70. Nếu chọn mốc thế năng tại mặt đất, thế năng trọng trường của một vật nằm dưới đáy một giếng sâu h có giá trị",
             options: [
-                "vật chắc chắn dừng lại.",
-                "vận tốc góc của vật chắc chắn bằng không.",
-                "mômen động lượng của vật đối với trục quay được bảo toàn.",
-                "động năng quay của vật luôn bằng không."
-            ],
-            correct: 2,
-            explain: "Tổng mômen ngoại lực bằng 0 thì mômen động lượng của vật được bảo toàn."
-        },
-        {
-            q: "Câu 38. Một chiếc vòng tròn mỏng, đồng chất có tâm hình học tại O. Khối tâm của vòng nằm",
-            options: [
-                "trên vành vòng.",
-                "ở điểm thấp nhất của vòng.",
-                "tại O, mặc dù tại đó không có vật chất.",
-                "không xác định vì phần giữa vòng là rỗng."
-            ],
-            correct: 2,
-            explain: "Do tính đối xứng hình học, khối tâm của vòng tròn đồng chất nằm ngay tại tâm O."
-        },
-        {
-            q: "Câu 39. Một vật rắn đang quay quanh một trục cố định với tốc độ góc không đổi. Phát biểu nào sau đây đúng?",
-            options: [
-                "Mọi điểm trên vật đều có cùng vận tốc dài.",
-                "Mọi điểm trên vật đều có gia tốc bằng không.",
-                "Mọi điểm trên vật có cùng tốc độ góc.",
-                "Các điểm càng xa trục quay có vận tốc góc càng lớn."
-            ],
-            correct: 2,
-            explain: "Trong chuyển động quay quanh trục cố định, mọi điểm trên vật rắn đều có chung một tốc độ góc."
-        },
-        {
-            q: "Câu 40. Một đĩa tròn đặc và một vành tròn mỏng có cùng khối lượng và bán kính, được thả đồng thời từ trạng thái nghỉ ở cùng độ cao trên hai mặt phẳng nghiêng giống nhau. Cả hai vật đều lăn không trượt. Phát biểu nào sau đây đúng?",
-            options: [
-                "Hai vật đến chân dốc cùng lúc vì có cùng khối lượng và bán kính.",
-                "Vành tròn đến chân dốc trước vì có mômen quán tính lớn hơn.",
-                "Đĩa tròn đặc đến chân dốc trước vì có mômen quán tính nhỏ hơn.",
-                "Không thể xác định vật nào đến trước nếu không biết góc nghiêng."
-            ],
-            correct: 2,
-            explain: "Đĩa tròn đặc có mômen quán tính nhỏ hơn nên xuống chân dốc trước."
-        },
-        {
-            q: "Câu 41. Mômen quán tính của một vật rắn đối với một trục quay cho biết",
-            options: [
-                "Mức độ quán tính của vật rắn trong chuyển động quay quanh trục đó.",
-                "Tổng khối lượng của vật rắn phân bố xung quanh khối tâm.",
-                "Khả năng tự quay của vật rắn khi không có mômen lực tác dụng.",
-                "Tốc độ quay nhanh hay chậm của vật rắn xung quanh trục quay cố định."
-            ],
-            correct: 0,
-            explain: "Mômen quán tính đặc trưng cho mức độ quán tính của vật trong chuyển động quay."
-        },
-        {
-            q: "Câu 42. Khi một diễn viên múa băng co hai tay lại gần cơ thể, tốc độ quay tròn tăng lên rõ rệt. Nguyên nhân là do",
-            options: [
-                "Mômen quán tính giảm làm tốc độ góc tăng để bảo toàn mômen động lượng.",
-                "Co tay làm tăng mômen lực tác dụng nên gia tốc góc của người tăng lên.",
-                "Khối lượng của cơ thể giảm đi giúp người quay nhanh hơn.",
-                "Động năng quay của cơ thể giảm sút làm tăng vận tốc quay."
-            ],
-            correct: 0,
-            explain: "Mômen quán tính giảm làm tốc độ góc tăng để bảo toàn mômen động lượng."
-        },
-        {
-            q: "Câu 43. Ý nghĩa của định lý Steiner-Huygens về mômen quán tính là gì?",
-            options: [
-                "Cho phép tính mômen quán tính đối với một trục bất kỳ song song với trục đi qua khối tâm.",
-                "Khẳng định mômen quán tính đối với trục đi qua khối tâm luôn có giá trị lớn nhất.",
-                "Xác định vị trí của khối tâm dựa vào sự phân bố khối lượng của vật rắn.",
-                "Cho phép quy đổi mômen quán tính từ hệ quy chiếu đứng yên sang hệ quay."
-            ],
-            correct: 0,
-            explain: "Định lý Steiner-Huygens giúp tính mômen quán tính đối với trục bất kỳ song song với trục qua khối tâm."
-        },
-        {
-            q: "Câu 44. Điều kiện để một vật rắn tròn lăn không trượt trên mặt phẳng là gì?",
-            options: [
-                "Vận tốc tức thời của điểm tiếp xúc giữa vật rắn và mặt phẳng bằng không.",
-                "Vận tốc tịnh tiến của khối tâm bằng với vận tốc góc của vật rắn.",
-                "Lực ma sát nghỉ tác dụng lên điểm tiếp xúc phải triệt tiêu hoàn toàn.",
-                "Gia tốc tịnh tiến của khối tâm luôn lớn hơn gia tốc góc của vật."
-            ],
-            correct: 0,
-            explain: "Điều kiện lăn không trượt là vận tốc tức thời tại điểm tiếp xúc bằng 0."
-        },
-        {
-            q: "Câu 45. Tại sao bánh xe đạp đang quay nhanh thì lại khó bị nghiêng ngả hoặc đổ hơn so với khi nó đứng yên?",
-            options: [
-                "Do có sự bảo toàn mômen động lượng giúp giữ cho hướng của trục quay được ổn định.",
-                "Do trọng lượng của con quay bị giảm đi đáng kể khi chuyển động quay nhanh.",
-                "Do lực ma sát với mặt sàn triệt tiêu hoàn toàn tác dụng của trọng lực.",
-                "Do con quay sinh ra một lực hút hướng thẳng đứng lên trên."
-            ],
-            correct: 0,
-            explain: "Sự bảo toàn mômen động lượng giúp giữ hướng trục quay ổn định, chống lại việc bị nghiêng đổ."
-        },
-        {
-            q: "Câu 46. Một đĩa tròn đồng chất có khối lượng 4 kg và bán kính 0,5 m quay quanh trục đi qua tâm và vuông góc với mặt đĩa. Mômen quán tính của đĩa đối với trục quay bằng",
-            options: [
-                "0,25 kg.m^2.",
-                "0,50 kg.m^2.",
-                "1,00 kg.m^2.",
-                "2,00 kg.m^2."
+                "dương.",
+                "âm (W_t = -m*g*h).",
+                "bằng 0.",
+                "vô cùng lớn."
             ],
             correct: 1,
-            explain: "I = 0.5 * m * R^2 = 0.5 * 4 * (0.5)^2 = 0,50 kg.m^2."
+            explain: "Nằm dưới mốc thế năng chọn tại mặt đất nên tọa độ z = -h < 0, làm thế năng W_t = m * g * z = -m * g * h < 0."
         },
         {
-            q: "Câu 47. Một vật rắn có mômen quán tính đối với trục quay là 2 kg.m^2. Một mômen lực không đổi 6 N.m tác dụng lên vật. Gia tốc góc của vật bằng",
+            q: "Câu 71. Khi một vật chuyển động ném ngang (bỏ qua sức cản không khí), đại lượng nào theo phương ngang được bảo toàn?",
             options: [
-                "2 rad/s^2.",
-                "3 rad/s^2.",
-                "6 rad/s^2.",
-                "12 rad/s^2."
+                "Gia tốc.",
+                "Thế năng.",
+                "Thành phần động lượng theo phương ngang p_x.",
+                "Động năng."
+            ],
+            correct: 2,
+            explain: "Theo phương ngang không có ngoại lực tác dụng (F_x = 0) nên thành phần vận tốc v_x = const => Động lượng p_x = m * v_x bảo toàn."
+        },
+        {
+            q: "Câu 72. Công của trọng lực làm một vật khối lượng m rơi từ độ cao h1 xuống độ cao h2 là",
+            options: [
+                "A = m * g * (h1 - h2).",
+                "A = m * g * (h2 - h1).",
+                "A = 0.5 * m * g * (h1 - h2).",
+                "A = m * g * (h1 + h2)."
+            ],
+            correct: 0,
+            explain: "Công trọng lực bằng hiệu thế năng trọng trường: A = W_t1 - W_t2 = m * g * h1 - m * g * h2 = m * g * (h1 - h2)."
+        },
+        {
+            q: "Câu 73. Nhận xét nào sau đây sai khi nói về động lượng?",
+            options: [
+                "Động lượng của hệ kín được bảo toàn.",
+                "Động lượng là đại lượng véc-tơ.",
+                "Động lượng của một vật không phụ thuộc vào hệ quy chiếu.",
+                "Động lượng có đơn vị là N.s."
+            ],
+            correct: 2,
+            explain: "Động lượng p = m * v có phụ thuộc hệ quy chiếu vì vận tốc v mang tính tương đối."
+        },
+        {
+            q: "Câu 74. Một xe có khối lượng m đang chuyển động với vận tốc v thì hãm phanh và đi thêm được quãng đường s thì dừng lại. Nếu vận tốc ban đầu là 2*v thì quãng đường hãm phanh dừng lại s' sẽ bằng (giả sử lực hãm không đổi)",
+            options: [
+                "2 * s.",
+                "4 * s.",
+                "s.",
+                "8 * s."
             ],
             correct: 1,
-            explain: "beta = M / I = 6 / 2 = 3 rad/s^2."
+            explain: "Định lý biến thiên động năng: 0 - 0.5 * m * v^2 = -F_hãm * s => s tỉ lệ với v^2. Khi v tăng 2 lần thì s tăng 2^2 = 4 lần."
         },
         {
-            q: "Câu 48. Một bánh xe quay quanh trục cố định với tốc độ góc 10 rad/s. Biết mômen quán tính của bánh xe đối với trục quay là 0,4 kg.m^2. Động năng quay của bánh xe bằng",
+            q: "Câu 75. Một chất điểm chịu tác dụng của lực F = 5 N dịch chuyển một đoạn s = 4 m. Góc giữa F và hướng dịch chuyển là 60 độ. Công của lực F là",
             options: [
-                "10 J.",
                 "20 J.",
-                "40 J.",
-                "50 J."
+                "10 J.",
+                "10 * căn(3) J.",
+                "0 J."
             ],
             correct: 1,
-            explain: "W_đ = 0.5 * I * omega^2 = 0.5 * 0.4 * 10^2 = 20 J."
+            explain: "A = F * s * cos(60) = 5 * 4 * 0.5 = 10 J."
         },
         {
-            q: "Câu 49. Một bánh xe lăn không trượt trên mặt đường với bán kính 0,25 m và tốc độ của khối tâm là 5 m/s. Tốc độ góc của bánh xe bằng",
+            q: "Câu 76. Trong chuyển động của tên lửa, khi khí phụt ra phía sau với vận tốc v_k thì thân tên lửa tiến về phía trước. Đây là ứng dụng của định luật",
             options: [
-                "5 rad/s.",
-                "10 rad/s.",
-                "20 rad/s.",
-                "25 rad/s."
+                "Bảo toàn cơ năng.",
+                "Bảo toàn động lượng.",
+                "Bảo toàn khối lượng.",
+                "Bảo toàn thế năng."
+            ],
+            correct: 1,
+            explain: "Nguyên tắc chuyển động phản lực dựa trên Định luật bảo toàn động lượng cho hệ kín (Tên lửa + Khí phụt)."
+        },
+        {
+            q: "Câu 77. Một vật nặng được kéo đều trên mặt sàn nằm ngang. Công của lực nào sau đây làm tiêu hao năng lượng thành nhiệt?",
+            options: [
+                "Công của lực kéo.",
+                "Công của trọng lực.",
+                "Công của lực ma sát.",
+                "Công của phản lực pháp tuyến."
             ],
             correct: 2,
-            explain: "omega = v / R = 5 / 0,25 = 20 rad/s."
+            explain: "Công của lực ma sát sinh nhiệt làm tiêu tán cơ năng của hệ."
         },
         {
-            q: "Câu 50. Một lực 10 N tác dụng vuông góc vào đầu một thanh cách trục quay 0,40 m. Độ lớn mômen của lực đối với trục quay bằng",
+            q: "Câu 78. Khi góc hợp bởi véc-tơ lực và véc-tơ vận tốc alpha = 90 độ thì công của lực",
             options: [
-                "2 N.m.",
-                "4 N.m.",
-                "10 N.m.",
-                "25 N.m."
+                "A > 0.",
+                "A < 0.",
+                "A = 0.",
+                "A có độ lớn cực đại."
+            ],
+            correct: 2,
+            explain: "cos(90 độ) = 0 nên A = F * s * cos(90) = 0 (lực không sinh công)."
+        },
+        {
+            q: "Câu 79. Khi một vật chuyển động tròn đều, phát biểu nào sau đây đúng?",
+            options: [
+                "Động lượng của vật không đổi.",
+                "Động năng của vật không đổi.",
+                "Công của hợp lực tác dụng lên vật luôn lớn hơn 0.",
+                "Gia tốc của vật bằng 0."
             ],
             correct: 1,
-            explain: "M = F * d = 10 * 0,40 = 4 N.m."
+            explain: "Chuyển động tròn đều có độ lớn vận tốc v không đổi => Động năng W_d = 0.5 * m * v^2 không đổi. (Động lượng đổi hướng nên véc-tơ động lượng biến đổi)."
         },
         {
-            q: "Câu 51. Momen lực tác dụng lên một vật có trục quay cố định là đại lượng",
+            q: "Câu 80. Khi vật nặng rơi trong chất lỏng sánh (như dầu nhờn) và đạt trạng thái vận tốc dừng không đổi, cơ năng của vật sẽ",
             options: [
-                "đặc trưng cho tác dụng làm quay vật của lực và được đo bằng tích của lực và cánh tay đòn của nó.",
-                "đặc trưng cho tác dụng làm quay vật của lực và được đo bằng tích của lực và cánh tay đòn của nó, đơn vị là (N.m).",
-                "đặc trưng cho độ mạnh yếu của lực.",
-                "luôn có giá trị âm."
+                "được bảo toàn.",
+                "giảm dần theo thời gian (giảm tuyến tính).",
+                "tăng dần.",
+                "bằng 0."
             ],
             correct: 1,
-            explain: "Mômen lực đặc trưng cho tác dụng làm quay, đo bằng tích lực và cánh tay đòn (đơn vị N.m)."
+            explain: "Vận tốc không đổi => Động năng không đổi. Độ cao giảm => Thế năng giảm. Cơ năng = Động năng + Thế năng giảm dần do lực cản chất lỏng."
         },
         {
-            q: "Câu 52. Chuyển động của đinh vít khi chúng ta vặn nó vào tấm gỗ là",
+            q: "Câu 81. Biểu thức delta_p = F * delta_t được gọi là",
             options: [
-                "chuyển động tịnh tiến.",
-                "chuyển động quay.",
-                "chuyển động thẳng và xiên.",
-                "chuyển động tịnh tiến và chuyển động quay."
+                "Phương trình công suất.",
+                "Định lý xung lượng của lực.",
+                "Định lý biến thiên động năng.",
+                "Định luật bảo toàn cơ năng."
             ],
-            correct: 3,
-            explain: "Đinh vít vừa quay vừa tiến sâu vào gỗ, đây là chuyển động kết hợp tịnh tiến và quay."
+            correct: 1,
+            explain: "F * delta_t là xung lượng của lực, delta_p là độ biến thiên động lượng. Đây là dạng tổng quát của Định luật II Newton (Định lý xung lượng)."
         },
         {
-            q: "Câu 53. Đối với vật quay quanh một trục cố định, câu nào sau đây đúng?",
+            q: "Câu 82. Va chạm giữa hai hòn bi bida được coi gần đúng là loại va chạm nào?",
             options: [
-                "Khi thấy tốc độ góc của vật thay đổi thì chắc chắn đã có momen lực tác dụng lên vật.",
-                "Nếu không chịu momen lực tác dụng thì vật phải đứng yên.",
-                "Vật quay được là nhờ có momen lực tác dụng lên nó.",
-                "Khi không còn momen lực tác dụng thì vật đang quay sẽ lập tức dừng lại."
+                "Va chạm mềm.",
+                "Va chạm hoàn toàn đàn hồi.",
+                "Va chạm không hoàn toàn đàn hồi.",
+                "Chuyển động phản lực."
+            ],
+            correct: 1,
+            explain: "Va chạm giữa các hòn bi bida bằng chất liệu cứng hầu như không bị biến dạng vĩnh viễn và ít sinh nhiệt nên coi gần đúng là va chạm đàn hồi."
+        },
+        {
+            q: "Câu 83. Một búa máy khối lượng M = 500 kg rơi từ độ cao h = 2 m xuống đập vào cọc. Công của trọng lực thực hiện trong quá trình rơi là (g = 10 m/s^2)",
+            options: [
+                "1.000 J.",
+                "5.000 J.",
+                "10.000 J.",
+                "2.500 J."
+            ],
+            correct: 2,
+            explain: "A = m * g * h = 500 * 10 * 2 = 10.000 J = 10 kJ."
+        },
+        {
+            q: "Câu 84. Động năng của hệ vật bằng tổng",
+            options: [
+                "động năng của từng vật trong hệ.",
+                "thế năng của từng vật.",
+                "cơ năng của từng vật.",
+                "động lượng của từng vật."
             ],
             correct: 0,
-            explain: "Tốc độ góc thay đổi tức là có gia tốc góc khác 0, theo phương trình M = I * beta thì chắc chắn có mômen lực tác dụng."
+            explain: "Động năng là đại lượng vô hướng cộng được: W_d_hệ = sum(W_di)."
         },
         {
-            q: "Câu 54. Mức quán tính của một vật quay quanh một trục phụ thuộc vào",
+            q: "Câu 85. Năng lượng tiêu hao do lực ma sát trượt biến đổi chủ yếu thành dạng năng lượng nào?",
             options: [
-                "khối lượng và sự phân bố khối lượng đối với trục quay.",
-                "hình dạng và kích thước của vật.",
-                "tốc độ góc của vật.",
-                "vị trí của trục quay."
+                "Thế năng.",
+                "Nhiệt năng.",
+                "Động năng.",
+                "Hóa năng."
+            ],
+            correct: 1,
+            explain: "Công của lực ma sát chuyển hóa cơ năng thành nhiệt năng làm nóng vật và bề mặt tiếp xúc."
+        },
+        {
+            q: "Câu 86. Chọn phát biểu SAI khi nói về lực thế và thế năng.",
+            options: [
+                "Lực thế luôn làm tăng động năng của vật.",
+                "Thế năng là năng lượng tương tác.",
+                "Công của lực thế bằng độ giảm thế năng.",
+                "Trường trọng lực là một trường lực thế."
             ],
             correct: 0,
-            explain: "Mômen quán tính phụ thuộc vào khối lượng và sự phân bố khối lượng đối với trục quay."
+            explain: "Lực thế có thể làm giảm động năng (ví dụ khi ném vật đi lên, trọng lực sinh công âm làm động năng giảm)."
         },
         {
-            q: "Câu 55. Khi chế tạo các bộ phận bánh đà, bánh ô tô... người ta phải cho trục quay đi qua trọng tâm vì",
+            q: "Câu 87. Một lực F không đổi làm vật dời chỗ một đoạn s. Công A cực đại khi góc alpha giữa F và hướng dời chỗ bằng",
             options: [
-                "chắc chắn, kiên cố.",
-                "làm cho trục quay ít bị biến dạng.",
-                "để làm cho chúng quay dễ dàng hơn.",
-                "để tránh lực ly tâm gây rung lắc và mất cân bằng khi quay nhanh."
-            ],
-            correct: 3,
-            explain: "Trục quay qua trọng tâm giúp tránh lực ly tâm gây rung lắc khi quay tốc độ cao."
-        },
-        {
-            q: "Câu 56. Khi vật rắn chuyển động tịnh tiến",
-            options: [
-                "Mọi điểm của vật chuyển động trên cùng một quỹ đạo.",
-                "Mọi điểm của vật có cùng vận tốc tại cùng một thời điểm.",
-                "Mọi điểm của vật có cùng tọa độ.",
-                "Vật không thể có gia tốc."
-            ],
-            correct: 1,
-            explain: "Trong chuyển động tịnh tiến, mọi điểm trên vật có cùng vận tốc tại cùng một thời điểm."
-        },
-        {
-            q: "Câu 57. Một bánh xe đang quay đều quanh trục cố định",
-            options: [
-                "Mọi điểm trên bánh xe có cùng vận tốc dài.",
-                "Mọi điểm trên bánh xe có cùng tốc độ góc.",
-                "Điểm gần trục quay có vận tốc dài lớn hơn.",
-                "Mọi điểm có cùng gia tốc hướng tâm."
-            ],
-            correct: 1,
-            explain: "Mọi điểm trên bánh xe quay quanh trục cố định đều có chung một tốc độ góc."
-        },
-        {
-            q: "Câu 58. Một vận động viên trượt băng đang quay thu hai tay sát vào cơ thể. Nếu mômen ngoại lực gần bằng 0 thì điều gì xảy ra?",
-            options: [
-                "Vận tốc góc giảm.",
-                "Vận tốc góc tăng.",
-                "Vận tốc góc không đổi.",
-                "Người dừng quay."
-            ],
-            correct: 1,
-            explain: "Thu tay làm giảm mômen quán tính, khiến vận tốc góc tăng lên."
-        },
-        {
-            q: "Câu 59. Một vật rắn có mômen quán tính I nhưng mômen quán tính tăng gấp đôi thì gia tốc góc...",
-            options: [
-                "Tăng 2 lần.",
-                "Giảm 2 lần.",
-                "Tăng 4 lần.",
-                "Không đổi"
-            ],
-            correct: 1,
-            explain: "Theo M = I * beta, với cùng mômen lực M thì mômen quán tính tăng gấp đôi làm gia tốc góc giảm 2 lần."
-        },
-        {
-            q: "Câu 60. Công thức nào là công thức tính động năng quay của một vật rắn quay quanh trục cố định?",
-            options: [
-                "W_đ = 0.5mv^2.",
-                "W_đ = 0.5I * omega.",
-                "W_đ = 0.5I * omega^2.",
-                "W_đ = I * omega^2."
-            ],
-            correct: 2,
-            explain: "Động năng quay của vật rắn là W_đ = 0.5 * I * omega^2."
-        },
-        {
-            q: "Câu 61. Hai vật được nối bởi một dây nhẹ vắt qua một ròng rọc có mômen quán tính khác 0. Ròng rọc quay không ma sát và dây không trượt. Gọi T1, T2 là lực căng dây ở hai phía. Phát biểu nào đúng?",
-            options: [
-                "T1 = T2 vì dây không có khối lượng.",
-                "T1 = T2 vì trục ròng rọc không có ma sát.",
-                "T1 khác T2 nói chung vì hiệu hai lực căng tạo mômen làm ròng rọc quay.",
-                "T1 khác T2 chỉ khi dây trượt trên ròng rọc."
-            ],
-            correct: 2,
-            explain: "Vì ròng rọc có mômen quán tính nên cần hiệu lực căng tạo mômen lực để quay ròng rọc, do đó T1 khác T2."
-        },
-        {
-            q: "Câu 62. Nếu dây không trượt trên ròng rọc bán kính R, mối liên hệ giữa gia tốc tịnh tiến a của dây và gia tốc góc beta của ròng rọc là",
-            options: [
-                "a = beta / R.",
-                "a = beta * R.",
-                "a = R / beta.",
-                "a = beta * R^2."
-            ],
-            correct: 1,
-            explain: "Mối liên hệ giữa gia tốc tịnh tiến và gia tốc góc là a = beta * R."
-        },
-        {
-            q: "Câu 63. Với cùng hai vật trong một máy Atwood, nếu tăng mômen quán tính của ròng rọc nhưng giữ nguyên mọi đại lượng khác thì độ lớn gia tốc của hệ sẽ",
-            options: [
-                "tăng.",
-                "giảm.",
-                "không đổi.",
-                "bằng g."
-            ],
-            correct: 1,
-            explain: "Tăng mômen quán tính của ròng rọc làm tăng mức cản trở chuyển động quay, kết quả làm giảm gia tốc hệ."
-        },
-        {
-            q: "Câu 64. Trong máy Atwood có ròng rọc có khối lượng, trục không ma sát và dây không trượt, khi sử dụng bảo toàn cơ năng phải kể đến",
-            options: [
-                "Chỉ động năng tịnh tiến của hai vật.",
-                "Chỉ động năng quay của ròng rọc.",
-                "Động năng tịnh tiến của hai vật và động năng quay của ròng rọc.",
-                "Động năng quay của ròng rọc nhưng không cần thế năng hấp dẫn."
-            ],
-            correct: 2,
-            explain: "Cơ năng toàn phần gồm thế năng trọng trường, động năng tịnh tiến của vật nặng và động năng quay của ròng rọc."
-        },
-        {
-            q: "Câu 65. Một vật rắn quay quanh một trục cố định dưới tác dụng của momen lực không đổi và khác không. Trong trường hợp này, đại lượng thay đổi là",
-            options: [
-                "Momen quán tính của vật đối với trục.",
-                "Khối lượng của vật.",
-                "Momen động lượng của vật đối với trục.",
-                "Gia tốc góc của vật."
-            ],
-            correct: 2,
-            explain: "Mômen lực không đổi làm tốc độ góc tăng đều, dẫn đến mômen động lượng thay đổi tăng theo thời gian."
-        },
-        {
-            q: "Câu 66. Đối với vật rắn quay quanh một trục cố định, các điểm trên vật có",
-            options: [
-                "Cùng vận tốc tiếp tuyến.",
-                "Cùng gia tốc hướng tâm.",
-                "Cùng tốc độ góc và gia tốc góc.",
-                "Cùng tốc độ dài."
-            ],
-            correct: 2,
-            explain: "Mọi điểm trên vật rắn quay quanh trục cố định đều có chung tốc độ góc và gia tốc góc."
-        },
-        {
-            q: "Câu 67. Khi một vật rắn quay quanh trục cố định, yếu tố nào quyết định mômen quán tính của vật?",
-            options: [
-                "Chỉ phụ thuộc vào khối lượng của vật.",
-                "Chỉ phụ thuộc vào tốc độ góc của vật.",
-                "Phụ thuộc vào khối lượng và sự phân bố khối lượng đối với trục quay.",
-                "Chỉ phụ thuộc vào bán kính của vật."
-            ],
-            correct: 2,
-            explain: "Mômen quán tính phụ thuộc vào khối lượng và cách phân bố khối lượng đối với trục quay."
-        },
-        {
-            q: "Câu 68. Đối với vật lăn không trượt trên mặt phẳng, động năng toàn phần của vật gồm",
-            options: [
-                "Chỉ có động năng quay.",
-                "Chỉ có động năng tịnh tiến.",
-                "Tổng động năng quay quanh khối tâm và động năng tịnh tiến của khối tâm.",
-                "Tổng thế năng và động năng tịnh tiến."
-            ],
-            correct: 2,
-            explain: "Động năng tổng cộng bằng tổng động năng tịnh tiến của khối tâm và động năng quay quanh khối tâm."
-        },
-        {
-            q: "Câu 69. Một vận động viên trượt băng nghệ thuật đang quay quanh trục thẳng đứng. Khi thu hai tay sát vào người, tốc độ quay tăng lên chủ yếu vì",
-            options: [
-                "Mômen lực tác dụng lên cơ thể tăng.",
-                "Khối lượng cơ thể giảm.",
-                "Mômen quán tính giảm.",
-                "Trọng lực tăng."
-            ],
-            correct: 2,
-            explain: "Thu tay làm mômen quán tính giảm, bảo toàn mômen động lượng khiến tốc độ góc tăng."
-        },
-        {
-            q: "Câu 70. Tại sao bánh xe đạp có thể tiếp tục quay một thời gian sau khi người đi xe ngừng đạp?",
-            options: [
-                "Do vẫn còn mômen lực từ bàn đạp.",
-                "Do quán tính quay của bánh xe.",
-                "Do trọng lực làm bánh xe quay tiếp.",
-                "Do lực cản không khí làm tăng tốc độ quay."
-            ],
-            correct: 1,
-            explain: "Do quán tính quay (mômen quán tính) của bánh xe duy trì chuyển động."
-        },
-        {
-            q: "Câu 71. Mômen lực đối với một trục quay đặc trưng cho",
-            options: [
-                "Khả năng làm vật chuyển động tịnh tiến.",
-                "Khả năng làm vật quay quanh trục.",
-                "Khả năng làm thay đổi khối lượng của vật.",
-                "Khả năng làm thay đổi thể tích của vật."
-            ],
-            correct: 1,
-            explain: "Mômen lực đặc trưng cho tác dụng làm quay vật quanh trục."
-        },
-        {
-            q: "Câu 72. Mômen quán tính của một vật rắn đối với một trục quay phụ thuộc vào",
-            options: [
-                "Chỉ khối lượng của vật.",
-                "Chỉ vận tốc góc của vật.",
-                "Khối lượng và sự phân bố khối lượng đối với trục quay.",
-                "Chỉ hình dạng bên ngoài của vật."
-            ],
-            correct: 2,
-            explain: "Phụ thuộc vào khối lượng và sự phân bố khối lượng đối với trục quay."
-        },
-        {
-            q: "Câu 73. Phương trình cơ bản của động lực học vật rắn quay quanh một trục cố định là",
-            options: [
-                "F = ma.",
-                "M = I * beta.",
-                "M = I * omega.",
-                "F = I * beta."
-            ],
-            correct: 1,
-            explain: "Phương trình động lực học quay là M = I * beta."
-        },
-        {
-            q: "Câu 74. Động năng quay của một vật rắn quay quanh trục cố định được xác định bởi",
-            options: [
-                "W_đ = 0.5mv^2.",
-                "W_đ = mgh.",
-                "W_đ = 0.5I * omega^2.",
-                "W_đ = I * omega."
-            ],
-            correct: 2,
-            explain: "Động năng quay là W_đ = 0.5 * I * omega^2."
-        },
-        {
-            q: "Câu 75. Mômen động lượng của một vật rắn đối với trục quay được bảo toàn khi",
-            options: [
-                "Tổng lực tác dụng lên vật bằng 0.",
-                "Tổng mômen ngoại lực đối với trục bằng 0.",
-                "Vận tốc góc của vật bằng 0.",
-                "Mômen quán tính của vật luôn không đổi."
-            ],
-            correct: 1,
-            explain: "Tổng mômen ngoại lực đối với trục quay bằng 0 thì mômen động lượng được bảo toàn."
-        },
-        {
-            q: "Câu 76. Đoạn thẳng nào sau đây là cánh tay đòn của lực?",
-            options: [
-                "Khoảng cách từ trục quay đến giá của lực.",
-                "Khoảng cách từ trục quay đến điểm đặt của lực.",
-                "Khoảng cách từ vật đến giá của lực.",
-                "Khoảng cách từ trục quay đến vật."
+                "0 độ.",
+                "45 độ.",
+                "90 độ.",
+                "180 độ."
             ],
             correct: 0,
-            explain: "Cánh tay đòn của lực là khoảng cách vuông góc từ trục quay đến giá của lực."
+            explain: "A = F * s * cos(alpha). Giá trị cos(alpha) lớn nhất bằng 1 khi alpha = 0 độ (lực kéo cùng chiều dịch chuyển)."
         },
         {
-            q: "Câu 77. Lực có tác dụng làm cho vật rắn quay quanh một trục khi",
+            q: "Câu 88. Một con lắc lò xo nằm ngang gồm vật m và lò xo k dao động điều hòa. Tại vị trí cân bằng",
             options: [
-                "lực có giá nằm trong mặt phẳng vuông góc với trục quay và cắt trục quay.",
-                "lực có giá song song với trục quay.",
-                "lực có giá cắt trục quay.",
-                "lực có giá nằm trong mặt phẳng vuông góc với trục quay và không cắt trục quay."
-            ],
-            correct: 3,
-            explain: "Lực làm vật quay khi giá của nó không cắt và không song song với trục quay."
-        },
-        {
-            q: "Câu 78. Khi tác dụng một lực vuông góc với cánh cửa, có độ lớn không đổi vào các vị trí khác nhau. Mômen lực gây ra tại vị trí nào là lớn nhất?",
-            options: [
-                "Điểm A (gần bản lề).",
-                "Điểm B.",
-                "Điểm C.",
-                "Điểm D (xa bản lề nhất)."
-            ],
-            correct: 3,
-            explain: "Vị trí ở xa bản lề nhất có cánh tay đòn lớn nhất, tạo ra mômen lực lớn nhất."
-        },
-        {
-            q: "Câu 79. Hai vật có cùng khối lượng và cùng kích thước ngoài nhưng có sự phân bố khối lượng bên trong khác nhau. Nhận xét nào đúng?",
-            options: [
-                "Hai vật luôn có cùng momen quán tính.",
-                "Vật có nhiều khối lượng phân bố xa trục quay hơn có momen quán tính lớn hơn.",
-                "Vật có nhiều khối lượng gần trục quay hơn có momen quán tính lớn hơn.",
-                "Momen quán tính chỉ phụ thuộc vào tổng khối lượng."
+                "thế năng cực đại, động năng bằng 0.",
+                "động năng cực đại, thế năng bằng 0.",
+                "cả động năng và thế năng đều cực đại.",
+                "cơ năng bằng 0."
             ],
             correct: 1,
-            explain: "Khối lượng phân bố xa trục quay hơn làm tăng mômen quán tính."
+            explain: "Tại vị trí cân bằng (x = 0), thế năng W_t = 0.5 * k * x^2 = 0; vận tốc v cực đại nên động năng W_d = 0.5 * m * v^2 đạt cực đại."
         },
         {
-            q: "Câu 80. Một vận động viên trượt băng đang quay trên mặt băng gần như không chịu momen ngoại lực. Khi người đó khép hai tay sát vào cơ thể thì",
+            q: "Câu 89. Đại lượng nào sau đây KHÔNG phụ thuộc vào việc chọn mốc thế năng?",
             options: [
-                "momen quán tính tăng và tốc độ góc giảm.",
-                "momen quán tính giảm và tốc độ góc tăng.",
-                "momen quán tính và tốc độ góc đều không thay đổi.",
-                "momen động lượng của người giảm."
+                "Thế năng trọng trường.",
+                "Độ biến thiên thế năng giữa hai điểm.",
+                "Cơ năng của vật.",
+                "Tọa độ vị trí của vật."
             ],
             correct: 1,
-            explain: "Khép tay làm mômen quán tính giảm, vận tốc góc tăng."
+            explain: "Độ biến thiên thế năng delta_W_t = W_t2 - W_t1 = A (bằng công trọng lực) luôn độc lập với việc chọn mốc thế năng."
         },
         {
-            q: "Câu 81. Mômen động lượng của một vật rắn đối với một trục cố định được bảo toàn khi điều kiện nào sau đây được thỏa mãn?",
+            q: "Câu 90. Một viên đạn khối lượng m = 10 g (0,01 kg) bay với vận tốc v = 500 m/s cắm vào một bao cát đứng yên khối lượng M = 4,99 kg. Vận tốc của bao cát chứa đạn ngay sau đó là",
             options: [
-                "Tổng ngoại lực tác dụng lên vật bằng 0.",
-                "Tổng mômen của các ngoại lực đối với trục đó bằng 0.",
-                "Động năng quay của vật không đổi.",
-                "Mômen quán tính của vật bằng 0."
-            ],
-            correct: 1,
-            explain: "Tổng mômen ngoại lực đối với trục quay bằng 0 thì mômen động lượng được bảo toàn."
-        },
-        {
-            q: "Câu 82. Một vật rắn lăn không trượt trên mặt phẳng. Biểu thức đúng của động năng toàn phần là",
-            options: [
-                "K = 0.5mv^2.",
-                "K = 0.5I * omega^2.",
-                "K = 0.5m * v_C^2 + 0.5I_C * omega^2, với v_C = omega * R.",
-                "K = 0.5I_C * v_C^2."
-            ],
-            correct: 2,
-            explain: "Động năng toàn phần gồm động năng tịnh tiến khối tâm và động năng quay quanh khối tâm."
-        },
-        {
-            q: "Câu 83. Một đĩa tròn đồng chất khối lượng M = 4 kg, bán kính R = 0,50 m quay tự do quanh trục qua tâm với omega = 10 rad/s. Một cục đất sét khối lượng m = 1 kg được thả nhẹ và dính vào mép đĩa. Vận tốc góc của hệ sau va chạm là bao nhiêu?",
-            options: [
-                "5,00 rad/s.",
-                "6,67 rad/s.",
-                "7,50 rad/s.",
-                "8,33 rad/s."
-            ],
-            correct: 1,
-            explain: "Áp dụng định luật bảo toàn mômen động lượng ta tính được vận tốc góc sau va chạm khoảng 6,67 rad/s."
-        },
-        {
-            q: "Câu 84. Một hình trụ đặc đồng chất lăn không trượt từ trạng thái nghỉ xuống mặt phẳng nghiêng góc 30 độ. Lấy I = 0.5mR^2. Độ cao ban đầu so với chân dốc là 1,5 m. Vận tốc của khối tâm tại chân dốc gần nhất là bao nhiêu?",
-            options: [
-                "3,16 m/s.",
-                "3,87 m/s.",
-                "4,47 m/s.",
-                "5,48 m/s."
-            ],
-            correct: 2,
-            explain: "Áp dụng định luật bảo toàn cơ năng tính được vận tốc khoảng 4,47 m/s."
-        },
-        {
-            q: "Câu 85. Một thanh đồng chất khối lượng M = 2 kg, dài L = 1,2 m, gắn bản lề tại một đầu và quay tự do trong mặt phẳng thẳng đứng. Ban đầu thanh nằm ngang và được thả không vận tốc đầu. Lực do bản lề tác dụng lên thanh khi đi qua vị trí thẳng đứng thấp nhất có độ lớn bao nhiêu? Cho I = 1/3 * M * L^2.",
-            options: [
-                "20 N.",
-                "30 N.",
-                "40 N.",
-                "50 N."
-            ],
-            correct: 3,
-            explain: "Tính toán cơ năng và lực hướng tâm tại vị trí thấp nhất cho kết quả lực do bản lề xấp xỉ 50 N."
-        },
-        {
-            q: "Câu 86. Mômen lực của lực F đối với một trục quay được xác định bởi",
-            options: [
-                "M = F * d, với d là khoảng cách vuông góc từ trục đến giá của lực.",
-                "M = F / d.",
-                "M = F + d.",
-                "M = F^2 * d."
+                "1 m/s.",
+                "5 m/s.",
+                "10 m/s.",
+                "0.5 m/s."
             ],
             correct: 0,
-            explain: "Công thức tính mômen lực là M = F * d."
+            explain: "Va chạm mềm: V = (m * v) / (m + M) = (0.01 * 500) / (0.01 + 4.99) = 5 / 5 = 1 m/s."
         },
         {
-            q: "Câu 87. Một vật rắn quay quanh một trục cố định với vận tốc góc không đổi. Khi đó vật",
+            q: "Câu 91. Định luật bảo toàn và chuyển hóa năng lượng phát biểu:",
             options: [
-                "quay nhanh dần đều.",
-                "quay chậm dần đều.",
-                "quay đều.",
-                "chuyển động tịnh tiến."
+                "Năng lượng không tự nhiên sinh ra cũng không tự nhiên mất đi, nó chỉ chuyển từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác.",
+                "Cơ năng luôn luôn được bảo toàn trong mọi quá trình tự nhiên.",
+                "Động năng luôn biến đổi thành thế năng và ngược lại.",
+                "Năng lượng toàn phần của vũ trụ giảm dần theo thời gian."
             ],
-            correct: 2,
-            explain: "Vận tốc góc không đổi nghĩa là vật đang quay đều."
-        },
-        {
-            q: "Câu 88. Mối liên hệ giữa vận tốc dài v của một điểm cách trục quay một khoảng r và vận tốc góc omega là",
-            options: [
-                "v = omega / r.",
-                "v = omega * r.",
-                "v = r / omega.",
-                "v = omega + r."
-            ],
-            correct: 1,
-            explain: "Công thức liên hệ là v = omega * r."
-        },
-        {
-            q: "Câu 89. Mômen quán tính của một vật rắn đối với một trục quay đặc trưng cho",
-            options: [
-                "khả năng chống lại sự thay đổi chuyển động tịnh tiến.",
-                "khả năng chống lại sự thay đổi chuyển động quay.",
-                "khối lượng riêng của vật.",
-                "năng lượng thế của vật."
-            ],
-            correct: 1,
-            explain: "Mômen quán tính đặc trưng cho mức độ chống lại sự thay đổi trạng thái chuyển động quay."
-        },
-        {
-            q: "Câu 90. Phương trình động lực học của vật rắn quay quanh một trục cố định có dạng",
-            options: [
-                "F = ma.",
-                "M = I * beta.",
-                "M = I * omega.",
-                "F = I * omega."
-            ],
-            correct: 1,
-            explain: "Phương trình động lực học quay là M = I * beta."
-        },
-        {
-            q: "Câu 91. Đại lượng nào đặc trưng cho mức quán tính của vật trong chuyển động quay?",
-            options: [
-                "Khối lượng.",
-                "Mômen quán tính.",
-                "Mômen lực.",
-                "Động lượng."
-            ],
-            correct: 1,
-            explain: "Mômen quán tính đóng vai trò là mức quán tính của vật trong chuyển động quay."
+            correct: 0,
+            explain: "Đây là phát biểu tổng quát của Định luật bảo toàn và chuyển hóa năng lượng trong tự nhiên."
         }
     ];
 
